@@ -24,7 +24,7 @@
       "Integração com sistemas legados",
       "APIs e interfaces customizadas"
     ]
-  },
+  }/*,
   {
     "slug": "treinamentos",
     "title": "Treinamentos e Capacitação",
@@ -37,5 +37,5 @@
       "Metodologias de prompt engineering",
       "Acompanhamento pós-treinamento"
     ]
-  }
+  }*/
 ]
