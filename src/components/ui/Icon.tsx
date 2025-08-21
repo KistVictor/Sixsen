@@ -9,6 +9,8 @@ import {
   Users,
   Target,
   ChevronRight,
+  ChevronUp,
+  ChevronDown,
   Calendar,
   MessageCircle,
   Mail,
@@ -18,6 +20,10 @@ import {
   Clock,
   Star,
   Award,
+  Layers,
+  Minus,
+  Plus,
+  X as XIcon,
   type LucideIcon
 } from 'lucide-react';
 
@@ -31,6 +37,8 @@ const iconMap = {
   users: Users,
   target: Target,
   'chevron-right': ChevronRight,
+  'chevron-up': ChevronUp,
+  'chevron-down': ChevronDown,
   calendar: Calendar,
   'message-circle': MessageCircle,
   mail: Mail,
@@ -39,7 +47,11 @@ const iconMap = {
   check: Check,
   clock: Clock,
   star: Star,
-  award: Award
+  award: Award,
+  layers: Layers,
+  minus: Minus,
+  plus: Plus,
+  x: XIcon
 } as const;
 
 export type IconName = keyof typeof iconMap;

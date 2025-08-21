@@ -109,13 +109,13 @@ const Index = () => {
           <div className="grid gap-8 md:grid-cols-2 mb-12">
             {featuredCases.map((case_, index) => (
               <CaseCard
-                key={case_.id}
+                key={case_.slug}
                 client={case_.client}
-                industry={case_.industry}
+                industry={case_.sector}
                 challenge={case_.challenge}
                 approach={case_.approach}
                 impact={case_.impact}
-                keyMetric={case_.keyMetric}
+                keyMetric={case_.kpis?.[0]}
                 timeline={case_.timeline}
                 index={index}
               />
@@ -171,13 +171,13 @@ const Index = () => {
           <div className="grid gap-6 md:grid-cols-3 mb-12">
             {postsData.map((post, index) => (
               <BlogCard
-                key={post.id}
+                key={post.slug}
                 title={post.title}
                 summary={post.summary}
-                readingTime={post.readingTime}
-                href={post.href}
-                category={post.category}
-                publishDate={post.publishDate}
+                readingTime={(post as any).readMin}
+                href={`/conteudos/${(post as any).slug}`}
+                category={(post as any).categories?.[0] ?? 'Geral'}
+                publishDate={(post as any).date}
                 index={index}
               />
             ))}

@@ -9,10 +9,14 @@ interface CaseCardProps {
   challenge: string;
   approach: string;
   impact: string;
-  keyMetric: {
+  keyMetric?: {
     value: string;
     label: string;
   };
+  kpis?: {
+    value: string;
+    label: string;
+  }[];
   timeline: string;
   index: number;
 }
@@ -24,9 +28,11 @@ const CaseCard = ({
   approach, 
   impact, 
   keyMetric, 
+  kpis,
   timeline, 
   index 
 }: CaseCardProps) => {
+  const displayKpi = keyMetric ?? (kpis && kpis[0]);
   return (
     <div 
       className="group relative p-8 rounded-2xl border border-border bg-card hover-lift hover:border-amber-kpi/50 transition-all duration-300 animate-fade-in-up"
@@ -42,9 +48,11 @@ const CaseCard = ({
             {industry}
           </Badge>
         </div>
-        <Badge variant="kpi" className="ml-4">
-          {keyMetric.value} {keyMetric.label}
-        </Badge>
+{displayKpi && (
+  <Badge variant="kpi" className="ml-4">
+    {displayKpi.value} {displayKpi.label}
+  </Badge>
+)}
       </div>
 
       {/* Content Structure */}
