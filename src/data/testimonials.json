@@ -1,0 +1,29 @@
+[
+  {
+    "id": "testimonial-ana-silva",
+    "name": "Ana Silva",
+    "position": "CEO",
+    "company": "TechCorp",
+    "text": "A Sixsen conseguiu traduzir nossa visão complexa de IA em uma solução prática que nossa equipe adotou naturalmente. Em 6 semanas, já víamos resultados concretos no nosso atendimento ao cliente.",
+    "avatar": "/testimonials/ana-silva.jpg",
+    "featured": true
+  },
+  {
+    "id": "testimonial-carlos-mendes",
+    "name": "Carlos Mendes", 
+    "position": "CTO",
+    "company": "RetailMax",
+    "text": "Impressionante como conseguiram integrar IA aos nossos processos sem disruption. A metodologia da Sixsen nos deu confiança para escalar.",
+    "avatar": "/testimonials/carlos-mendes.jpg",
+    "featured": true
+  },
+  {
+    "id": "testimonial-maria-santos",
+    "name": "Maria Santos",
+    "position": "Head de Operações",
+    "company": "LogiFlow",
+    "text": "Finalmente uma consultoria que fala nossa linguagem. Nada de jargões técnicos — só soluções que funcionam no mundo real.",
+    "avatar": "/testimonials/maria-santos.jpg",
+    "featured": false
+  }
+]

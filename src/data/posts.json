@@ -1,0 +1,29 @@
+[
+  {
+    "id": "guia-primeiros-passos-ia",
+    "title": "Primeiros Passos com IA: Guia para Empresas",
+    "summary": "Como identificar oportunidades de IA no seu negócio e começar com segurança.",
+    "readingTime": 8,
+    "href": "/conteudos/guia-primeiros-passos-ia",
+    "category": "Estratégia",
+    "publishDate": "2024-01-15"
+  },
+  {
+    "id": "roi-projetos-ia",
+    "title": "Como Medir ROI em Projetos de IA",
+    "summary": "Métricas práticas para avaliar o retorno dos seus investimentos em inteligência artificial.",
+    "readingTime": 6,
+    "href": "/conteudos/roi-projetos-ia", 
+    "category": "Gestão",
+    "publishDate": "2024-01-10"
+  },
+  {
+    "id": "chatbots-vs-agentes-ia",
+    "title": "Chatbots vs Agentes de IA: Qual Escolher?",
+    "summary": "Entenda as diferenças e quando usar cada solução para atendimento ao cliente.",
+    "readingTime": 5,
+    "href": "/conteudos/chatbots-vs-agentes-ia",
+    "category": "Tecnologia", 
+    "publishDate": "2024-01-05"
+  }
+]

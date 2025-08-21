@@ -1,0 +1,94 @@
+{
+  "hero": {
+    "headlines": [
+      "Traduzimos complexidade em resultado com IA.",
+      "Pontes entre tecnologia e pessoas — com impacto real."
+    ],
+    "currentHeadline": 0,
+    "subhead": "Consultoria e soluções de IA sob medida para o seu contexto.",
+    "primaryCTA": "Agendar diagnóstico",
+    "secondaryCTA": "Ver casos",
+    "microtrust": "Sem jargões. Com contexto."
+  },
+  "socialProof": {
+    "title": "Empresas que já caminham com a Sixsen",
+    "testimonialSnippet": {
+      "text": "A Sixsen trouxe clareza onde havia complexidade. Resultados em 4 semanas.",
+      "author": "Ana Silva",
+      "position": "CEO, TechCorp"
+    }
+  },
+  "pillars": {
+    "title": "Como Conectamos",
+    "subtitle": "Sem jargões. Com contexto.",
+    "items": [
+      {
+        "icon": "translate",
+        "title": "Tradução da Complexidade",
+        "description": "Transformamos jargões técnicos em ações claras para o seu negócio. O que entregamos é compreensível e aplicável."
+      },
+      {
+        "icon": "users",
+        "title": "Conexão Humana", 
+        "description": "Tecnologia no ritmo do seu negócio. Co-criação e adoção com sua equipe, sem intimidar."
+      },
+      {
+        "icon": "target",
+        "title": "Transformação Prática",
+        "description": "Prova de valor rápida (4–6 semanas), com métricas claras em cada entrega."
+      }
+    ]
+  },
+  "services": {
+    "title": "Nossos Serviços"
+  },
+  "cases": {
+    "title": "Casos de Sucesso",
+    "cta": "Explorar todos os cases"
+  },
+  "methodology": {
+    "title": "Da Ideia ao Impacto",
+    "subtitle": "Nossa metodologia garante resultados rápidos e sustentáveis.",
+    "steps": [
+      {
+        "icon": "search",
+        "title": "Descoberta",
+        "description": "Entendendo seu contexto e desafios."
+      },
+      {
+        "icon": "pen-tool",
+        "title": "Desenho", 
+        "description": "Planejando a solução alinhada à estratégia."
+      },
+      {
+        "icon": "zap",
+        "title": "Prova de Valor (4–6 semanas)",
+        "description": "Protótipo rápido para demonstrar ROI."
+      },
+      {
+        "icon": "trending-up",
+        "title": "Escala",
+        "description": "Da validação à produção com segurança."
+      },
+      {
+        "icon": "shield-check",
+        "title": "Suporte",
+        "description": "Acompanhamento e evolução contínua."
+      }
+    ]
+  },
+  "content": {
+    "title": "Insights e Guias em IA",
+    "cta": "Ver biblioteca completa"
+  },
+  "trust": {
+    "title": "Pessoas e organizações confiam na Sixsen para ser a ponte em suas jornadas de IA."
+  },
+  "finalCTA": {
+    "title": "Vamos traduzir seu próximo passo em IA?",
+    "subtitle": "Pronto para descomplicar a IA na sua empresa? Damos o primeiro passo juntos.",
+    "primaryCTA": "Agendar diagnóstico",
+    "secondaryCTA": "Fale no WhatsApp",
+    "lgpdNote": "Seus dados são protegidos. Veja nossa Política de Privacidade."
+  }
+}

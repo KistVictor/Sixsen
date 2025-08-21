@@ -1,0 +1,44 @@
+[
+  {
+    "id": "case-suporte-inteligente",
+    "client": "TechCorp (placeholder)",
+    "industry": "Software B2B",
+    "challenge": "Suporte sobrecarregado e respostas lentas.",
+    "approach": "Agente de IA treinado no conhecimento interno; integrado ao CRM em 5 semanas.",
+    "impact": "+32% produtividade do suporte e −18% no tempo médio de resposta em 60 dias.",
+    "keyMetric": {
+      "value": "+32%",
+      "label": "produtividade"
+    },
+    "timeline": "5 semanas",
+    "featured": true
+  },
+  {
+    "id": "case-previsoes-vendas",
+    "client": "RetailMax (placeholder)", 
+    "industry": "Varejo",
+    "challenge": "Previsões de vendas imprecisas.",
+    "approach": "Modelo preditivo sob medida com dados internos + fatores externos.",
+    "impact": "−15% de estoque parado em 3 meses; assertividade ↑ para 90%.",
+    "keyMetric": {
+      "value": "90%",
+      "label": "assertividade"
+    },
+    "timeline": "6 semanas",
+    "featured": true
+  },
+  {
+    "id": "case-automacao-documentos",
+    "client": "LegalTech (placeholder)",
+    "industry": "Jurídico",
+    "challenge": "Análise manual de contratos consome 60% do tempo dos advogados.",
+    "approach": "IA para extração e análise de cláusulas críticas, integrada ao workflow existente.",
+    "impact": "−70% no tempo de análise de contratos e detecção de 95% de riscos contratuais.",
+    "keyMetric": {
+      "value": "-70%",
+      "label": "tempo de análise"
+    },
+    "timeline": "4 semanas", 
+    "featured": false
+  }
+]

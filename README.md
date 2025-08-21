@@ -1,73 +1,90 @@
-# Welcome to your Lovable project
+# Sixsen - Mente que Conecta
 
-## Project info
+Site oficial da Sixsen, consultoria especializada em IA que traduz complexidade em resultados práticos.
 
-**URL**: https://lovable.dev/projects/a6d1dae3-e3a2-485c-8c85-754f067f205e
+## 🚀 Como Rodar o Projeto
 
-## How can I edit this code?
+```bash
+# Instalar dependências
+npm install
 
-There are several ways of editing your application.
-
-**Use Lovable**
-
-Simply visit the [Lovable Project](https://lovable.dev/projects/a6d1dae3-e3a2-485c-8c85-754f067f205e) and start prompting.
-
-Changes made via Lovable will be committed automatically to this repo.
-
-**Use your preferred IDE**
-
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
-
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
-
-Follow these steps:
-
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
+# Rodar em desenvolvimento
 npm run dev
+
+# Build para produção
+npm run build
 ```
 
-**Edit a file directly in GitHub**
+## 🎨 Design System
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+### Paleta de Cores (Tailwind Classes)
+- **ink**: Base escuro (#0B1220)
+- **bridge-blue**: Cor primária (#2563EB)
+- **cyan-accent**: Destaque/interação (#06B6D4)
+- **amber-kpi**: Acento para KPIs (#F59E0B)
 
-**Use GitHub Codespaces**
+### Tipografia
+- **Títulos**: Space Grotesk (`font-space`)
+- **Corpo**: Inter (`font-inter`)
+- **Código**: JetBrains Mono (`font-mono`)
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+## 📝 Editando Conteúdo
 
-## What technologies are used for this project?
+### Textos da Home
+Edite `/src/data/home.json` para alterar:
+- Headlines do hero
+- Textos dos pilares
+- CTAs e micro-copies
 
-This project is built with:
+### Serviços
+Edite `/src/data/services.json` para adicionar/modificar serviços.
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+### Casos de Sucesso
+Edite `/src/data/cases.json` para gerenciar casos.
 
-## How can I deploy this project?
+### Blog/Conteúdos
+Edite `/src/data/posts.json` para posts do blog.
 
-Simply open [Lovable](https://lovable.dev/projects/a6d1dae3-e3a2-485c-8c85-754f067f205e) and click on Share -> Publish.
+### Depoimentos
+Edite `/src/data/testimonials.json` para testimonials.
 
-## Can I connect a custom domain to my Lovable project?
+## 🔧 Variáveis de Ambiente
 
-Yes, you can!
+```env
+# Opcional - Analytics
+PLAUSIBLE_DOMAIN=seu-dominio.com
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+# Links de integração
+CALENDLY_URL=https://calendly.com/sixsen
+WHATSAPP_LINK=https://wa.me/5511999999999
+EMAIL_CONTATO=contato@sixsen.com.br
+```
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+## 🎯 Recursos Implementados
+
+✅ Design system completo com cores da marca  
+✅ Home page funcional com todas as seções  
+✅ Páginas internas (stubs para expansão)  
+✅ Componentes reutilizáveis  
+✅ Animações sutis  
+✅ WhatsApp flutuante  
+✅ SEO otimizado  
+✅ Responsivo  
+✅ Modo escuro por padrão  
+
+## 🚧 Próximos Passos
+
+1. **Conteúdo**: Preencher páginas internas detalhadas
+2. **Imagens**: Adicionar logos reais de clientes
+3. **Blog**: Implementar sistema de posts completo
+4. **Formulários**: Criar formulário de contato funcional
+5. **Analytics**: Configurar Plausible se necessário
+
+## 📧 Contato
+
+- **Email**: contato@sixsen.com.br
+- **Site**: https://sixsen.com.br (quando deploy)
+
+---
+
+*Desenvolvido com 💙 para conectar tecnologia e pessoas*
