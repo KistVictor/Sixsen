@@ -3,39 +3,73 @@
     "slug": "consultoria-estrategica",
     "title": "Consultoria Estratégica de IA",
     "shortDescription": "Descubra onde a IA gera mais impacto. Roadmap claro para investir com segurança e retorno.",
+    "summary": "Descubra onde a IA gera mais impacto no seu negócio.",
     "problem": "Incerteza sobre onde aplicar IA",
     "value": "Roadmap estratégico validado",
-    "bullets": [
-      "Mapeamento de oportunidades de IA no seu negócio",
-      "Análise de viabilidade técnica e financeira",
-      "Roadmap priorizado com ROI estimado",
-      "Workshop de alinhamento com stakeholders"
+    "painPoints": ["Não sei por onde começar", "Incerteza sobre ROI", "Muitas opções no mercado"],
+    "valuePoints": ["Roadmap claro", "Prioridades com base em valor", "ROI estimado por iniciativa"],
+    "deliverables": ["Diagnóstico completo", "Mapa de oportunidades", "Plano de 90 dias", "Workshop de alinhamento"],
+    "outcomes": ["Decisões embasadas", "Investimentos assertivos", "Equipe alinhada"],
+    "timelineWeeks": "2–4",
+    "investmentRange": "R$ 15k–35k",
+    "faqs": [
+      {"q": "Como iniciamos o processo?", "a": "Começamos com entrevistas estruturadas e análise dos seus dados e processos atuais."},
+      {"q": "Quanto tempo leva?", "a": "Entre 2-4 semanas, dependendo da complexidade e disponibilidade da equipe."},
+      {"q": "Preciso ter conhecimento técnico?", "a": "Não. Nossa função é traduzir a complexidade técnica em decisões de negócio claras."}
+    ]
+  },
+  {
+    "slug": "arquitetura-mlops",
+    "title": "Arquitetura de Soluções & MLOps",
+    "shortDescription": "Da ideia à produção, com robustez. Integração segura, performance e governança.",
+    "summary": "Arquitetura robusta para colocar IA em produção com segurança.",
+    "problem": "Dificuldade para escalar soluções de IA",
+    "value": "Infraestrutura confiável e governança",
+    "painPoints": ["PoCs que não escalam", "Falta de governança", "Integração complexa"],
+    "valuePoints": ["Arquitetura escalável", "Deploy automatizado", "Monitoramento contínuo"],
+    "deliverables": ["Arquitetura de referência", "Pipeline CI/CD", "Documentação técnica", "Treinamento da equipe"],
+    "outcomes": ["IA em produção", "Operação confiável", "Time autônomo"],
+    "timelineWeeks": "4–8",
+    "investmentRange": "R$ 25k–60k",
+    "faqs": [
+      {"q": "Funciona com nossa infraestrutura atual?", "a": "Sim, criamos uma arquitetura que se integra aos seus sistemas existentes."},
+      {"q": "Como garantem a segurança?", "a": "Seguimos melhores práticas de segurança e compliance, com auditoria contínua."}
     ]
   },
   {
     "slug": "desenvolvimento-ia",
     "title": "Desenvolvimento de IA Customizada",
-    "shortDescription": "IA sob medida para seus dados e sistemas. Vantagem competitiva além do software de prateleira.", 
+    "shortDescription": "IA sob medida para seus dados e sistemas. Vantagem competitiva além do software de prateleira.",
+    "summary": "Soluções de IA customizadas para seu contexto específico.",
     "problem": "Soluções genéricas não atendem necessidades específicas",
     "value": "IA customizada para seu contexto",
-    "bullets": [
-      "LLMs fine-tuned para seu domínio",
-      "Agentes de IA para processos específicos",
-      "Integração com sistemas legados",
-      "APIs e interfaces customizadas"
+    "painPoints": ["Software de prateleira limitado", "Dados únicos sem aproveitamento", "Vantagem competitiva perdida"],
+    "valuePoints": ["Solução sob medida", "Aproveitamento total dos dados", "Diferencial competitivo"],
+    "deliverables": ["LLMs fine-tuned", "Agentes especializados", "APIs customizadas", "Interface de usuário"],
+    "outcomes": ["Processos automatizados", "Decisões mais rápidas", "Vantagem competitiva"],
+    "timelineWeeks": "6–12",
+    "investmentRange": "R$ 40k–120k",
+    "faqs": [
+      {"q": "Quanto tempo para ver resultados?", "a": "Primeiros protótipos em 2-3 semanas, solução completa em 6-12 semanas."},
+      {"q": "Posso começar pequeno?", "a": "Sim, sempre recomendamos uma prova de valor antes de escalar."}
     ]
   },
   {
     "slug": "treinamentos",
     "title": "Treinamentos e Capacitação",
     "shortDescription": "Workshops práticos que preparam sua equipe para aplicar IA no dia a dia.",
+    "summary": "Capacitação prática para sua equipe dominar IA.",
     "problem": "Equipe não preparada para adoção de IA",
     "value": "Time capacitado e confiante",
-    "bullets": [
-      "Workshops hands-on por área de negócio",
-      "Treinamento em ferramentas de IA",
-      "Metodologias de prompt engineering",
-      "Acompanhamento pós-treinamento"
+    "painPoints": ["Resistência à mudança", "Falta de conhecimento prático", "Medo da tecnologia"],
+    "valuePoints": ["Aprendizado hands-on", "Aplicação imediata", "Confiança na tecnologia"],
+    "deliverables": ["Workshops por área", "Material de referência", "Projetos práticos", "Mentoria pós-treinamento"],
+    "outcomes": ["Equipe autônoma", "Adoção acelerada", "Cultura de inovação"],
+    "timelineWeeks": "2–6",
+    "investmentRange": "R$ 8k–25k",
+    "faqs": [
+      {"q": "É técnico demais?", "a": "Não, adaptamos o conteúdo para cada perfil, focando na aplicação prática."},
+      {"q": "Inclui certificação?", "a": "Sim, fornecemos certificados de participação e competência."}
     ]
   }
 ]

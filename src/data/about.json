@@ -1,0 +1,45 @@
+{
+  "narrative": "A Sixsen traduz a linguagem da tecnologia para a das pessoas, conectando estratégia e execução para que a IA gere valor real nos negócios.",
+  "mission": "Ser a ponte entre a complexidade da IA e a simplicidade dos resultados.",
+  "vision": "Um mundo onde toda empresa, independente do tamanho, tenha acesso aos benefícios da inteligência artificial.",
+  "pillars": [
+    {
+      "title": "Tradução da Complexidade",
+      "desc": "Do técnico ao aplicável.",
+      "detail": "Transformamos jargões em ações claras. Nossa função é fazer você entender exatamente o que está comprando e por que vale a pena."
+    },
+    {
+      "title": "Conexão Humana", 
+      "desc": "Tecnologia no ritmo do negócio.",
+      "detail": "IA é ferramenta, não substituto. Desenhamos soluções que potencializam pessoas, respeitando cultura e processo."
+    },
+    {
+      "title": "Transformação Prática",
+      "desc": "Prova de valor em semanas.",
+      "detail": "Teoria é importante, resultado é essencial. Entregamos valor tangível rapidamente, com métricas claras de sucesso."
+    }
+  ],
+  "principles": [
+    "Clareza acima de jargão técnico",
+    "Resultados mensuráveis sempre",
+    "Co-criação com o cliente",
+    "Ética e transparência em IA",
+    "Sustentabilidade dos projetos"
+  ],
+  "stats": [
+    {"label": "Projetos Entregues", "value": "50+"},
+    {"label": "ROI Médio", "value": "280%"},
+    {"label": "Tempo Médio para Valor", "value": "4 semanas"},
+    {"label": "Taxa de Adoção", "value": "95%"}
+  ],
+  "certifications": [
+    "AWS ML Specialty",
+    "Google Cloud AI",
+    "Azure AI Fundamentals"
+  ],
+  "partnerships": [
+    {"name": "OpenAI Partner", "logo": "/partners/openai.svg"},
+    {"name": "AWS Select Partner", "logo": "/partners/aws.svg"},
+    {"name": "Google Cloud Partner", "logo": "/partners/gcp.svg"}
+  ]
+}

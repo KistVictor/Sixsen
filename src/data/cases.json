@@ -1,44 +1,90 @@
 [
   {
-    "id": "case-suporte-inteligente",
+    "slug": "agente-suporte-crm",
     "client": "TechCorp (placeholder)",
-    "industry": "Software B2B",
+    "sector": "Serviços",
+    "objective": ["Produtividade", "Experiência do Cliente"],
     "challenge": "Suporte sobrecarregado e respostas lentas.",
-    "approach": "Agente de IA treinado no conhecimento interno; integrado ao CRM em 5 semanas.",
-    "impact": "+32% produtividade do suporte e −18% no tempo médio de resposta em 60 dias.",
-    "keyMetric": {
-      "value": "+32%",
-      "label": "produtividade"
+    "approach": "Agente de IA treinado no conhecimento interno, integrado ao CRM em 5 semanas.",
+    "solution": "Assistente omnicanal com handoff humano inteligente.",
+    "kpis": [
+      {"label": "+Produtividade", "value": "+32%"},
+      {"label": "-TMR", "value": "-18%"},
+      {"label": "Satisfação", "value": "4.8★"}
+    ],
+    "impact": "Mais tickets resolvidos no primeiro contato; clientes mais satisfeitos; equipe focada em casos complexos.",
+    "testimonial": {
+      "quote": "Adoção rápida pela equipe e resultados visíveis desde a primeira semana.",
+      "author": "Diretor de Operações"
     },
+    "stack": ["LLM Custom", "CRM Integration", "Omnichannel"],
     "timeline": "5 semanas",
     "featured": true
   },
   {
-    "id": "case-previsoes-vendas",
-    "client": "RetailMax (placeholder)", 
-    "industry": "Varejo",
-    "challenge": "Previsões de vendas imprecisas.",
-    "approach": "Modelo preditivo sob medida com dados internos + fatores externos.",
-    "impact": "−15% de estoque parado em 3 meses; assertividade ↑ para 90%.",
-    "keyMetric": {
-      "value": "90%",
-      "label": "assertividade"
+    "slug": "previsao-vendas-retail",
+    "client": "RetailMax (placeholder)",
+    "sector": "Varejo",
+    "objective": ["Otimização de Estoque", "Previsibilidade"],
+    "challenge": "Previsões de vendas imprecisas geravam estoque parado.",
+    "approach": "Modelo preditivo com dados internos + fatores externos (clima, eventos, tendências).",
+    "solution": "Dashboard preditivo integrado ao ERP com alertas automáticos.",
+    "kpis": [
+      {"label": "Assertividade", "value": "90%"},
+      {"label": "-Estoque Parado", "value": "-15%"},
+      {"label": "+Margem", "value": "+8%"}
+    ],
+    "impact": "Redução significativa de estoque parado; melhor planejamento de compras; margem aumentada.",
+    "testimonial": {
+      "quote": "Transformou nossa operação de reativa para preditiva. ROI em 3 meses.",
+      "author": "Head de Supply Chain"
     },
+    "stack": ["ML Preditivo", "ERP Integration", "External APIs"],
     "timeline": "6 semanas",
     "featured": true
   },
   {
-    "id": "case-automacao-documentos",
+    "slug": "automacao-contratos-juridico",
     "client": "LegalTech (placeholder)",
-    "industry": "Jurídico",
-    "challenge": "Análise manual de contratos consome 60% do tempo dos advogados.",
+    "sector": "Jurídico",
+    "objective": ["Eficiência Operacional", "Redução de Riscos"],
+    "challenge": "Análise manual de contratos consumia 60% do tempo dos advogados.",
     "approach": "IA para extração e análise de cláusulas críticas, integrada ao workflow existente.",
-    "impact": "−70% no tempo de análise de contratos e detecção de 95% de riscos contratuais.",
-    "keyMetric": {
-      "value": "-70%",
-      "label": "tempo de análise"
+    "solution": "Plataforma de análise automatizada com scoring de risco e alertas.",
+    "kpis": [
+      {"label": "-Tempo Análise", "value": "-70%"},
+      {"label": "Detecção Riscos", "value": "95%"},
+      {"label": "+Produtividade", "value": "+40%"}
+    ],
+    "impact": "Advogados focam em estratégia; análise de risco mais consistente; throughput de contratos triplicado.",
+    "testimonial": {
+      "quote": "Nossa equipe júnior agora tem performance de sênior na análise de contratos.",
+      "author": "Sócia-Fundadora"
     },
-    "timeline": "4 semanas", 
+    "stack": ["NLP Custom", "Document AI", "Workflow Integration"],
+    "timeline": "4 semanas",
+    "featured": false
+  },
+  {
+    "slug": "chatbot-atendimento-financas",
+    "client": "FinanceFlow (placeholder)",
+    "sector": "Financeiro",
+    "objective": ["Escalabilidade", "Redução de Custos"],
+    "challenge": "Volume de atendimento crescendo 200% ao ano sem poder contratar proporcionalmente.",
+    "approach": "Chatbot inteligente para consultas frequentes com escalação para humanos quando necessário.",
+    "solution": "Bot conversacional integrado a WhatsApp, site e app móvel.",
+    "kpis": [
+      {"label": "Resolução 1º Nível", "value": "78%"},
+      {"label": "-Custo por Ticket", "value": "-45%"},
+      {"label": "NPS", "value": "+12pts"}
+    ],
+    "impact": "Atendimento 24/7; equipe humana foca em casos complexos; experiência do cliente melhorada.",
+    "testimonial": {
+      "quote": "Conseguimos crescer 3x o volume de clientes sem aumentar o time de suporte.",
+      "author": "CEO"
+    },
+    "stack": ["Conversational AI", "WhatsApp API", "CRM Integration"],
+    "timeline": "3 semanas",
     "featured": false
   }
 ]

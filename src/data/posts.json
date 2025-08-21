@@ -1,29 +1,63 @@
 [
   {
-    "id": "guia-primeiros-passos-ia",
-    "title": "Primeiros Passos com IA: Guia para Empresas",
-    "summary": "Como identificar oportunidades de IA no seu negócio e começar com segurança.",
-    "readingTime": 8,
-    "href": "/conteudos/guia-primeiros-passos-ia",
-    "category": "Estratégia",
-    "publishDate": "2024-01-15"
+    "slug": "aplicacoes-praticas-ia-pmes",
+    "title": "5 aplicações práticas de IA para PMEs",
+    "summary": "Onde começar hoje para gerar impacto real sem grandes investimentos.",
+    "readMin": 4,
+    "date": "2025-08-15",
+    "categories": ["Estratégia"],
+    "tags": ["IA aplicada", "PME", "ROI"],
+    "author": "Victor Silva",
+    "featured": true
   },
   {
-    "id": "roi-projetos-ia",
+    "slug": "roi-projetos-ia",
     "title": "Como Medir ROI em Projetos de IA",
-    "summary": "Métricas práticas para avaliar o retorno dos seus investimentos em inteligência artificial.",
-    "readingTime": 6,
-    "href": "/conteudos/roi-projetos-ia", 
-    "category": "Gestão",
-    "publishDate": "2024-01-10"
+    "summary": "Métricas práticas e frameworks para avaliar retorno em inteligência artificial.",
+    "readMin": 6,
+    "date": "2025-08-10",
+    "categories": ["Gestão"],
+    "tags": ["ROI", "Métricas", "KPIs"],
+    "author": "Ana Costa"
   },
   {
-    "id": "chatbots-vs-agentes-ia",
+    "slug": "chatbots-vs-agentes-ia",
     "title": "Chatbots vs Agentes de IA: Qual Escolher?",
-    "summary": "Entenda as diferenças e quando usar cada solução para atendimento ao cliente.",
-    "readingTime": 5,
-    "href": "/conteudos/chatbots-vs-agentes-ia",
-    "category": "Tecnologia", 
-    "publishDate": "2024-01-05"
+    "summary": "Entenda diferenças, custos e quando usar cada solução para atendimento.",
+    "readMin": 5,
+    "date": "2025-08-05",
+    "categories": ["Tecnologia"],
+    "tags": ["Chatbots", "Agentes", "Atendimento"],
+    "author": "Carlos Mendoza"
+  },
+  {
+    "slug": "implementacao-ia-sem-traumas",
+    "title": "Implementando IA sem Traumas na Equipe",
+    "summary": "Como conduzir transformação digital mantendo pessoas engajadas.",
+    "readMin": 7,
+    "date": "2025-07-28",
+    "categories": ["Gestão", "Estratégia"],
+    "tags": ["Change Management", "Cultura", "Adoção"],
+    "author": "Victor Silva"
+  },
+  {
+    "slug": "arquitetura-ia-producao",
+    "title": "Da PoC à Produção: Arquitetura de IA que Escala",
+    "summary": "Padrões e práticas para colocar IA em produção com confiança.",
+    "readMin": 8,
+    "date": "2025-07-20",
+    "categories": ["Tecnologia"],
+    "tags": ["MLOps", "Arquitetura", "Produção"],
+    "author": "Ana Costa"
+  },
+  {
+    "slug": "custos-ocultos-ia",
+    "title": "Os Custos Ocultos da IA (e Como Evitá-los)",
+    "summary": "Além da licença: infraestrutura, treino e manutenção de sistemas de IA.",
+    "readMin": 6,
+    "date": "2025-07-15",
+    "categories": ["Gestão"],
+    "tags": ["Custos", "Planejamento", "Budget"],
+    "author": "Victor Silva"
   }
 ]
