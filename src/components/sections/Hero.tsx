@@ -46,7 +46,11 @@ const Hero = ({
             <span className="text-gradient animate-fade-in-up">
               complexidade 
             </span>
-            em resultado com IA
+            em 
+            <span className="text-gradient animate-fade-in-up">
+              resultado 
+            </span>
+             com IA
           </h1>
 
           {/* Subheadline */}
