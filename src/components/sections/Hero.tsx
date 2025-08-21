@@ -42,9 +42,11 @@ const Hero = ({
         <div className="max-w-4xl mx-auto text-center">
           {/* Main Headline */}
           <h1 className="font-space font-bold text-4xl md:text-5xl lg:text-6xl xl:text-7xl leading-tight mb-6">
+            Traduzimos
             <span className="text-gradient animate-fade-in-up">
-              {headlines[activeHeadline]}
+              complexidade
             </span>
+            em resultado com IA
           </h1>
 
           {/* Subheadline */}
