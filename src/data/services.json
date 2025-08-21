@@ -19,24 +19,6 @@
     ]
   },
   {
-    "slug": "arquitetura-mlops",
-    "title": "Arquitetura de Soluções & MLOps",
-    "shortDescription": "Da ideia à produção, com robustez. Integração segura, performance e governança.",
-    "summary": "Arquitetura robusta para colocar IA em produção com segurança.",
-    "problem": "Dificuldade para escalar soluções de IA",
-    "value": "Infraestrutura confiável e governança",
-    "painPoints": ["PoCs que não escalam", "Falta de governança", "Integração complexa"],
-    "valuePoints": ["Arquitetura escalável", "Deploy automatizado", "Monitoramento contínuo"],
-    "deliverables": ["Arquitetura de referência", "Pipeline CI/CD", "Documentação técnica", "Treinamento da equipe"],
-    "outcomes": ["IA em produção", "Operação confiável", "Time autônomo"],
-    "timelineWeeks": "4–8",
-    "investmentRange": "R$ 25k–60k",
-    "faqs": [
-      {"q": "Funciona com nossa infraestrutura atual?", "a": "Sim, criamos uma arquitetura que se integra aos seus sistemas existentes."},
-      {"q": "Como garantem a segurança?", "a": "Seguimos melhores práticas de segurança e compliance, com auditoria contínua."}
-    ]
-  },
-  {
     "slug": "desenvolvimento-ia",
     "title": "Desenvolvimento de IA Customizada",
     "shortDescription": "IA sob medida para seus dados e sistemas. Vantagem competitiva além do software de prateleira.",
