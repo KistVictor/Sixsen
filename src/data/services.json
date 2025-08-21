@@ -13,19 +13,6 @@
     ]
   },
   {
-    "slug": "arquitetura-mlops", 
-    "title": "Arquitetura de Soluções / MLOps",
-    "shortDescription": "Da ideia à produção, com robustez. Integração segura, performance e governança.",
-    "problem": "Dificuldade para escalar IA em produção",
-    "value": "Infraestrutura robusta e governança",
-    "bullets": [
-      "Arquitetura de dados para ML/AI",
-      "Pipelines de CI/CD para modelos",
-      "Monitoramento e observabilidade",
-      "Governança e compliance de IA"
-    ]
-  },
-  {
     "slug": "desenvolvimento-ia",
     "title": "Desenvolvimento de IA Customizada",
     "shortDescription": "IA sob medida para seus dados e sistemas. Vantagem competitiva além do software de prateleira.", 
