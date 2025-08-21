@@ -83,7 +83,7 @@ const Index = () => {
             </h2>
           </div>
           
-          <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-4">
+          <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
             {servicesData.map((service, index) => (
               <ServiceCard
                 key={service.slug}
