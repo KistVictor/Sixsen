@@ -9,10 +9,11 @@ import { Input } from '@/components/ui/input';
 import Icon from '@/components/ui/Icon';
 import FilterTags from '@/components/common/FilterTags';
 import cases from '@/data/cases.json';
-
 const Casos = () => {
   const [searchTerm, setSearchTerm] = useState('');
-  const [filters, setFilters] = useState<{ [key: string]: string[] }>({
+  const [filters, setFilters] = useState<{
+    [key: string]: string[];
+  }>({
     sector: [],
     objective: []
   });
@@ -20,46 +21,36 @@ const Casos = () => {
   // Get unique values for filters
   const sectors = [...new Set(cases.map(c => c.sector))];
   const objectives = [...new Set(cases.flatMap(c => c.objective))];
-
   const toggleFilter = (key: string, value: string) => {
     setFilters(prev => ({
       ...prev,
-      [key]: prev[key].includes(value) 
-        ? prev[key].filter(v => v !== value)
-        : [...prev[key], value]
+      [key]: prev[key].includes(value) ? prev[key].filter(v => v !== value) : [...prev[key], value]
     }));
   };
-
   const removeFilter = (key: string, value: string) => {
     setFilters(prev => ({
       ...prev,
       [key]: prev[key].filter(v => v !== value)
     }));
   };
-
   const clearAllFilters = () => {
-    setFilters({ sector: [], objective: [] });
+    setFilters({
+      sector: [],
+      objective: []
+    });
     setSearchTerm('');
   };
 
   // Filter cases
   const filteredCases = useMemo(() => {
     return cases.filter(caseItem => {
-      const matchesSearch = searchTerm === '' || 
-        caseItem.challenge.toLowerCase().includes(searchTerm.toLowerCase()) ||
-        caseItem.solution.toLowerCase().includes(searchTerm.toLowerCase()) ||
-        caseItem.client.toLowerCase().includes(searchTerm.toLowerCase());
-
+      const matchesSearch = searchTerm === '' || caseItem.challenge.toLowerCase().includes(searchTerm.toLowerCase()) || caseItem.solution.toLowerCase().includes(searchTerm.toLowerCase()) || caseItem.client.toLowerCase().includes(searchTerm.toLowerCase());
       const matchesSector = filters.sector.length === 0 || filters.sector.includes(caseItem.sector);
-      const matchesObjective = filters.objective.length === 0 || 
-        caseItem.objective.some(obj => filters.objective.includes(obj));
-
+      const matchesObjective = filters.objective.length === 0 || caseItem.objective.some(obj => filters.objective.includes(obj));
       return matchesSearch && matchesSector && matchesObjective;
     });
   }, [searchTerm, filters]);
-
-  return (
-    <>
+  return <>
       <Header />
       <main className="min-h-screen pt-20">
         <Section spacing="xl">
@@ -84,53 +75,28 @@ const Casos = () => {
           {/* Filters */}
           <div id="casos" className="mb-8">
             <div className="flex flex-col lg:flex-row gap-4 mb-6">
-              <div className="flex-1">
-                <Input
-                  placeholder="Buscar por desafio, solução ou empresa..."
-                  value={searchTerm}
-                  onChange={(e) => setSearchTerm(e.target.value)}
-                  className="w-full"
-                />
-              </div>
+              
               
               <div className="flex flex-wrap gap-2">
                 <div className="flex flex-wrap gap-1">
                   <span className="text-sm text-muted-foreground py-2 px-1">Setor:</span>
-                  {sectors.map(sector => (
-                    <Button
-                      key={sector}
-                      variant={filters.sector.includes(sector) ? "default" : "outline"}
-                      size="sm"
-                      onClick={() => toggleFilter('sector', sector)}
-                    >
+                  {sectors.map(sector => <Button key={sector} variant={filters.sector.includes(sector) ? "default" : "outline"} size="sm" onClick={() => toggleFilter('sector', sector)}>
                       {sector}
-                    </Button>
-                  ))}
+                    </Button>)}
                 </div>
                 
                 <div className="w-full lg:w-auto"></div>
                 
                 <div className="flex flex-wrap gap-1">
                   <span className="text-sm text-muted-foreground py-2 px-1">Objetivo:</span>
-                  {objectives.map(objective => (
-                    <Button
-                      key={objective}
-                      variant={filters.objective.includes(objective) ? "default" : "outline"}
-                      size="sm"
-                      onClick={() => toggleFilter('objective', objective)}
-                    >
+                  {objectives.map(objective => <Button key={objective} variant={filters.objective.includes(objective) ? "default" : "outline"} size="sm" onClick={() => toggleFilter('objective', objective)}>
                       {objective}
-                    </Button>
-                  ))}
+                    </Button>)}
                 </div>
               </div>
             </div>
 
-            <FilterTags 
-              filters={filters}
-              onRemoveFilter={removeFilter}
-              onClearAll={clearAllFilters}
-            />
+            <FilterTags filters={filters} onRemoveFilter={removeFilter} onClearAll={clearAllFilters} />
           </div>
 
           {/* Results */}
@@ -142,33 +108,26 @@ const Casos = () => {
 
           {/* Cases Grid */}
           <div className="grid gap-8 lg:grid-cols-2">
-            {filteredCases.map((caseItem, index) => (
-              <div 
-                key={caseItem.slug}
-                className="group relative p-8 rounded-2xl border border-border bg-card hover-lift hover:border-cyan-accent/50 transition-all duration-300 animate-fade-in-up"
-                style={{ animationDelay: `${index * 0.1}s` }}
-              >
+            {filteredCases.map((caseItem, index) => <div key={caseItem.slug} className="group relative p-8 rounded-2xl border border-border bg-card hover-lift hover:border-cyan-accent/50 transition-all duration-300 animate-fade-in-up" style={{
+            animationDelay: `${index * 0.1}s`
+          }}>
                 <div className="space-y-6">
                   {/* Header */}
                   <div className="flex items-start justify-between">
                     <div>
                       <div className="flex items-center gap-2 mb-2">
                         <Badge variant="outline">{caseItem.sector}</Badge>
-                        {caseItem.featured && (
-                          <Badge variant="default" className="bg-amber-accent/20 text-amber-accent border-amber-accent/30">
+                        {caseItem.featured && <Badge variant="default" className="bg-amber-accent/20 text-amber-accent border-amber-accent/30">
                             Destaque
-                          </Badge>
-                        )}
+                          </Badge>}
                       </div>
                       <h3 className="font-space font-semibold text-xl mb-2 group-hover:text-bridge-blue transition-colors">
                         {caseItem.client}
                       </h3>
                       <div className="flex flex-wrap gap-1">
-                        {caseItem.objective.map(obj => (
-                          <Badge key={obj} variant="secondary" className="text-xs">
+                        {caseItem.objective.map(obj => <Badge key={obj} variant="secondary" className="text-xs">
                             {obj}
-                          </Badge>
-                        ))}
+                          </Badge>)}
                       </div>
                     </div>
                     <div className="text-right">
@@ -210,47 +169,36 @@ const Casos = () => {
                       
                       {/* KPIs */}
                       <div className="flex flex-wrap gap-2 pl-4">
-                        {caseItem.kpis.map((kpi, i) => (
-                          <Badge key={i} variant="secondary" className="bg-amber-accent/20 text-amber-accent border-amber-accent/30">
+                        {caseItem.kpis.map((kpi, i) => <Badge key={i} variant="secondary" className="bg-amber-accent/20 text-amber-accent border-amber-accent/30">
                             {kpi.value} {kpi.label}
-                          </Badge>
-                        ))}
+                          </Badge>)}
                       </div>
                     </div>
                   </div>
 
                   {/* Testimonial */}
-                  {caseItem.testimonial && (
-                    <div className="bg-card/50 rounded-xl p-4 border border-border/50">
+                  {caseItem.testimonial && <div className="bg-card/50 rounded-xl p-4 border border-border/50">
                       <blockquote className="text-sm italic mb-2">
                         "{caseItem.testimonial.quote}"
                       </blockquote>
                       <cite className="text-xs text-muted-foreground">
                         — {caseItem.testimonial.author}
                       </cite>
-                    </div>
-                  )}
+                    </div>}
 
                   {/* Tech Stack */}
                   <div className="flex items-center gap-2">
                     <Icon name="layers" size={16} className="text-muted-foreground" />
                     <div className="flex flex-wrap gap-1">
-                      {caseItem.stack.map(tech => (
-                        <span key={tech} className="text-xs text-muted-foreground bg-muted px-2 py-1 rounded">
+                      {caseItem.stack.map(tech => <span key={tech} className="text-xs text-muted-foreground bg-muted px-2 py-1 rounded">
                           {tech}
-                        </span>
-                      ))}
+                        </span>)}
                     </div>
                   </div>
 
                   {/* CTA */}
                   <div className="pt-4">
-                    <Button 
-                      variant="outline" 
-                      size="sm" 
-                      className="group-hover:border-bridge-blue group-hover:text-bridge-blue"
-                      asChild
-                    >
+                    <Button variant="outline" size="sm" className="group-hover:border-bridge-blue group-hover:text-bridge-blue" asChild>
                       <Link to={`/casos/${caseItem.slug}`}>
                         Ver detalhes completos
                         <Icon name="arrow-right" size={16} />
@@ -263,13 +211,11 @@ const Casos = () => {
                 <div className="absolute top-4 right-4 w-3 h-3 border-2 border-cyan-accent rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                   <div className="w-full h-full bg-cyan-accent rounded-full animate-pulse"></div>
                 </div>
-              </div>
-            ))}
+              </div>)}
           </div>
 
           {/* Empty State */}
-          {filteredCases.length === 0 && (
-            <div className="text-center py-16">
+          {filteredCases.length === 0 && <div className="text-center py-16">
               <Icon name="search" size={48} className="mx-auto mb-4 text-muted-foreground" />
               <h3 className="font-space font-semibold text-xl mb-2">
                 Nenhum caso encontrado
@@ -280,8 +226,7 @@ const Casos = () => {
               <Button variant="outline" onClick={clearAllFilters}>
                 Limpar filtros
               </Button>
-            </div>
-          )}
+            </div>}
 
           {/* CTA */}
           <div className="mt-16 text-center">
@@ -305,8 +250,6 @@ const Casos = () => {
         </Section>
       </main>
       <Footer />
-    </>
-  );
+    </>;
 };
-
 export default Casos;
