@@ -9,6 +9,8 @@ import Casos from "./pages/Casos";
 import Sobre from "./pages/Sobre";
 import Conteudos from "./pages/Conteudos";
 import Contato from "./pages/Contato";
+import PoliticaPrivacidade from "./pages/PoliticaPrivacidade";
+import LGPD from "./pages/LGPD";
 import NotFound from "./pages/NotFound";
 import WhatsAppFloat from "./components/common/WhatsAppFloat";
 
@@ -28,6 +30,8 @@ const App = () => (
             <Route path="/sobre" element={<Sobre />} />
             <Route path="/conteudos" element={<Conteudos />} />
             <Route path="/contato" element={<Contato />} />
+            <Route path="/politica-de-privacidade" element={<PoliticaPrivacidade />} />
+            <Route path="/lgpd" element={<LGPD />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />
           </Routes>
