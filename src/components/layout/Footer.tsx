@@ -3,45 +3,29 @@ import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
 import Container from './Container';
 import Icon from '@/components/ui/Icon';
+
 const Footer = () => {
   const navigation = {
-    main: [{
-      name: 'Serviços',
-      href: '/servicos'
-    }, {
-      name: 'Casos',
-      href: '/casos'
-    }, {
-      name: 'Sobre',
-      href: '/sobre'
-    }, {
-      name: 'Conteúdos',
-      href: '/conteudos'
-    }, {
-      name: 'Contato',
-      href: '/contato'
-    }],
-    legal: [{
-      name: 'Política de Privacidade',
-      href: '/privacidade'
-    }, {
-      name: 'Termos de Uso',
-      href: '/termos'
-    }, {
-      name: 'LGPD',
-      href: '/lgpd'
-    }],
-    social: [{
-      name: 'LinkedIn',
-      href: 'https://linkedin.com/company/sixsen',
-      icon: 'external-link'
-    }, {
-      name: 'Twitter',
-      href: 'https://twitter.com/sixsen',
-      icon: 'external-link'
-    }]
+    main: [
+      { name: 'Serviços', href: '/servicos' },
+      { name: 'Casos', href: '/casos' },
+      { name: 'Sobre', href: '/sobre' },
+      { name: 'Conteúdos', href: '/conteudos' },
+      { name: 'Contato', href: '/contato' }
+    ],
+    legal: [
+      { name: 'Política de Privacidade', href: '/privacidade' },
+      { name: 'Termos de Uso', href: '/termos' },
+      { name: 'LGPD', href: '/lgpd' }
+    ],
+    social: [
+      { name: 'LinkedIn', href: 'https://linkedin.com/company/sixsen', icon: 'external-link' },
+      { name: 'Twitter', href: 'https://twitter.com/sixsen', icon: 'external-link' }
+    ]
   };
-  return <footer className="bg-card border-t border-border">
+
+  return (
+    <footer className="bg-card border-t border-border">
       <Container>
         <div className="py-12 lg:py-16">
           {/* Newsletter Section */}
@@ -54,7 +38,11 @@ const Footer = () => {
                 Receba guias práticos, casos de sucesso e tendências de IA para empresas. Sem spam, só conteúdo valioso.
               </p>
               <div className="flex flex-col sm:flex-row gap-3">
-                <input type="email" placeholder="seu@email.com" className="flex-1 px-4 py-3 rounded-xl border border-border bg-background focus:outline-none focus:ring-2 focus:ring-bridge-blue" />
+                <input
+                  type="email"
+                  placeholder="seu@email.com"
+                  className="flex-1 px-4 py-3 rounded-xl border border-border bg-background focus:outline-none focus:ring-2 focus:ring-bridge-blue"
+                />
                 <Button variant="bridge" size="lg">
                   Inscrever-se
                 </Button>
@@ -86,7 +74,7 @@ const Footer = () => {
                   <strong>Email:</strong> contato@sixsen.com.br
                 </p>
                 <p className="text-sm">
-                  <strong>WhatsApp:</strong> +55 (11) 99999-9999
+                  <strong>WhatsApp:</strong> +55 (51) 99951-6231
                 </p>
               </div>
             </div>
@@ -95,11 +83,16 @@ const Footer = () => {
             <div>
               <h4 className="font-medium mb-4">Navegação</h4>
               <ul className="space-y-3">
-                {navigation.main.map(item => <li key={item.name}>
-                    <Link to={item.href} className="text-sm text-muted-foreground hover:text-bridge-blue transition-colors focus-ring rounded">
+                {navigation.main.map((item) => (
+                  <li key={item.name}>
+                    <Link 
+                      to={item.href}
+                      className="text-sm text-muted-foreground hover:text-bridge-blue transition-colors focus-ring rounded"
+                    >
                       {item.name}
                     </Link>
-                  </li>)}
+                  </li>
+                ))}
               </ul>
             </div>
 
@@ -107,29 +100,47 @@ const Footer = () => {
             <div>
               <h4 className="font-medium mb-4">Legal & Social</h4>
               <ul className="space-y-3 mb-6">
-                {navigation.legal.map(item => <li key={item.name}>
-                    <Link to={item.href} className="text-sm text-muted-foreground hover:text-bridge-blue transition-colors focus-ring rounded">
+                {navigation.legal.map((item) => (
+                  <li key={item.name}>
+                    <Link 
+                      to={item.href}
+                      className="text-sm text-muted-foreground hover:text-bridge-blue transition-colors focus-ring rounded"
+                    >
                       {item.name}
                     </Link>
-                  </li>)}
+                  </li>
+                ))}
               </ul>
               <div className="flex space-x-3">
-                {navigation.social.map(item => <a key={item.name} href={item.href} target="_blank" rel="noopener noreferrer" className="flex items-center justify-center w-10 h-10 rounded-xl bg-secondary hover:bg-bridge-blue hover:text-white transition-all focus-ring" aria-label={item.name}>
+                {navigation.social.map((item) => (
+                  <a
+                    key={item.name}
+                    href={item.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center justify-center w-10 h-10 rounded-xl bg-secondary hover:bg-bridge-blue hover:text-white transition-all focus-ring"
+                    aria-label={item.name}
+                  >
                     <Icon name={item.icon as any} size={18} />
-                  </a>)}
+                  </a>
+                ))}
               </div>
             </div>
           </div>
 
           {/* Bottom Bar */}
           <div className="pt-8 border-t border-border flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
-            <p className="text-sm text-muted-foreground">© 2025 Sixsen. Todos os direitos reservados.</p>
+            <p className="text-sm text-muted-foreground">
+              © 2024 Sixsen. Todos os direitos reservados.
+            </p>
             <p className="text-sm text-muted-foreground">
               Desenvolvido com 💙 para conectar tecnologia e pessoas
             </p>
           </div>
         </div>
       </Container>
-    </footer>;
+    </footer>
+  );
 };
+
 export default Footer;
