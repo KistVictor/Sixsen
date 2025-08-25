@@ -18,8 +18,7 @@ const Footer = () => {
       { name: 'LGPD', href: '/lgpd' }
     ],
     social: [
-      { name: 'LinkedIn', href: 'https://linkedin.com/company/sixsen', icon: 'external-link' },
-      { name: 'Twitter', href: 'https://twitter.com/sixsen', icon: 'external-link' }
+      { name: 'LinkedIn', href: 'https://linkedin.com/company/sixsen', icon: 'external-link' }
     ]
   };
 
@@ -27,7 +26,8 @@ const Footer = () => {
     <footer className="bg-card border-t border-border">
       <Container>
         <div className="py-12 lg:py-16">
-          {/* Newsletter Section */}
+
+          {/* Newsletter Section 
           <div className="mb-12 p-8 rounded-2xl border border-border bg-gradient-subtle">
             <div className="max-w-2xl">
               <h3 className="font-space font-semibold text-xl mb-2">
@@ -50,7 +50,7 @@ const Footer = () => {
                 Ao se inscrever, você concorda com nossa Política de Privacidade.
               </p>
             </div>
-          </div>
+          </div>*/}
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
             {/* Company Info */}
@@ -130,7 +130,7 @@ const Footer = () => {
           {/* Bottom Bar */}
           <div className="pt-8 border-t border-border flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
             <p className="text-sm text-muted-foreground">
-              © 2024 Sixsen. Todos os direitos reservados.
+              © 2025 Sixsen. Todos os direitos reservados.
             </p>
             <p className="text-sm text-muted-foreground">
               Desenvolvido com 💙 para conectar tecnologia e pessoas

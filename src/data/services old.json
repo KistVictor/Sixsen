@@ -19,6 +19,24 @@
     ]
   },
   {
+    "slug": "arquitetura-mlops",
+    "title": "Arquitetura de Soluções & MLOps",
+    "shortDescription": "Da ideia à produção, com robustez. Integração segura, performance e governança.",
+    "summary": "Arquitetura robusta para colocar IA em produção com segurança.",
+    "problem": "Dificuldade para escalar soluções de IA",
+    "value": "Infraestrutura confiável e governança",
+    "painPoints": ["PoCs que não escalam", "Falta de governança", "Integração complexa"],
+    "valuePoints": ["Arquitetura escalável", "Deploy automatizado", "Monitoramento contínuo"],
+    "deliverables": ["Arquitetura de referência", "Pipeline CI/CD", "Documentação técnica", "Treinamento da equipe"],
+    "outcomes": ["IA em produção", "Operação confiável", "Time autônomo"],
+    "timelineWeeks": "4–8",
+    "investmentRange": "R$ 25k–60k",
+    "faqs": [
+      {"q": "Funciona com nossa infraestrutura atual?", "a": "Sim, criamos uma arquitetura que se integra aos seus sistemas existentes."},
+      {"q": "Como garantem a segurança?", "a": "Seguimos melhores práticas de segurança e compliance, com auditoria contínua."}
+    ]
+  },
+  {
     "slug": "desenvolvimento-ia",
     "title": "Desenvolvimento de IA Customizada",
     "shortDescription": "IA sob medida para seus dados e sistemas. Vantagem competitiva além do software de prateleira.",
@@ -34,6 +52,24 @@
     "faqs": [
       {"q": "Quanto tempo para ver resultados?", "a": "Primeiros protótipos em 2-3 semanas, solução completa em 6-12 semanas."},
       {"q": "Posso começar pequeno?", "a": "Sim, sempre recomendamos uma prova de valor antes de escalar."}
+    ]
+  },
+  {
+    "slug": "treinamentos",
+    "title": "Treinamentos e Capacitação",
+    "shortDescription": "Workshops práticos que preparam sua equipe para aplicar IA no dia a dia.",
+    "summary": "Capacitação prática para sua equipe dominar IA.",
+    "problem": "Equipe não preparada para adoção de IA",
+    "value": "Time capacitado e confiante",
+    "painPoints": ["Resistência à mudança", "Falta de conhecimento prático", "Medo da tecnologia"],
+    "valuePoints": ["Aprendizado hands-on", "Aplicação imediata", "Confiança na tecnologia"],
+    "deliverables": ["Workshops por área", "Material de referência", "Projetos práticos", "Mentoria pós-treinamento"],
+    "outcomes": ["Equipe autônoma", "Adoção acelerada", "Cultura de inovação"],
+    "timelineWeeks": "2–6",
+    "investmentRange": "R$ 8k–25k",
+    "faqs": [
+      {"q": "É técnico demais?", "a": "Não, adaptamos o conteúdo para cada perfil, focando na aplicação prática."},
+      {"q": "Inclui certificação?", "a": "Sim, fornecemos certificados de participação e competência."}
     ]
   }
 ]

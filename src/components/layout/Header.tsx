@@ -24,10 +24,10 @@ const Header = () => {
   ];
 
   return (
-    <header className={`fixed top-0 w-full z-50 transition-all duration-300 ${
+    <header id="top" className={`fixed top-0 w-full z-50 transition-all duration-300 ${
       isScrolled 
         ? 'bg-background/95 backdrop-blur-md border-b border-border shadow-card-hover' 
-        : 'bg-transparent'
+        : 'bg-background/95 backdrop-blur-md border-b border-border shadow-card-hover'
     }`}>
       <Container>
         <div className="flex items-center justify-between h-16 lg:h-20">

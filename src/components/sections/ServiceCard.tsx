@@ -60,7 +60,7 @@ const ServiceCard = ({
             className="group-hover:border-bridge-blue group-hover:text-bridge-blue"
             asChild
           >
-            <Link to={`/servicos#${slug}`} className="focus-ring">
+            <Link to="/servicos" className="focus-ring">
               Saiba mais
               <Icon name="arrow-right" size={16} />
             </Link>

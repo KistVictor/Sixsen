@@ -8,6 +8,7 @@ import { Badge } from '@/components/ui/badge';
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
 import Icon from '@/components/ui/Icon';
 import services from '@/data/services.json';
+import servicesFAQ from '@/data/servicesFAQ.json';
 
 const Servicos = () => {
   const [selectedService, setSelectedService] = useState<string | null>(null);

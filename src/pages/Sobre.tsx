@@ -97,7 +97,7 @@ const Sobre = () => {
               </p>
             </div>
 
-            <div className="grid gap-8 md:grid-cols-3">
+            <div className="grid gap-8 md:grid-cols-3 justify-center">
               {team.map((member, index) => (
                 <div 
                   key={member.name}
@@ -105,7 +105,7 @@ const Sobre = () => {
                   style={{ animationDelay: `${index * 0.15}s` }}
                 >
                   <div className="space-y-4">
-                    <div className="w-24 h-24 mx-auto mb-4 rounded-full bg-gradient-to-br from-bridge-blue to-cyan-accent"></div>
+                    <img src={member.avatar} className="w-24 h-24 mx-auto mb-4 rounded-full bg-gradient-to-br from-bridge-blue to-cyan-accent"></img>
                     
                     <div>
                       <h3 className="font-space font-semibold text-xl mb-1 group-hover:text-bridge-blue transition-colors">

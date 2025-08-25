@@ -2,34 +2,12 @@
   {
     "name": "Victor Kist",
     "role": "Consultor Principal & Fundador",
-    "bio": "Tradutor de mundos: conecta tecnologia e pessoas. 10+ anos bridge entre estratégia e execução.",
+    "bio": "Conecta tecnologia e pessoas. 5+ anos bridge entre estratégia e execução.",
     "expertise": ["Estratégia de IA", "Transformação Digital", "Gestão de Produtos"],
     "links": {
-      "linkedin": "#",
-      "email": "victor@sixsen.com.br"
+      "linkedin": "https://www.linkedin.com/in/kistvictor/",
+      "email": "victorkist@sixsen.com.br"
     },
-    "avatar": "/team/victor.jpg"
-  },
-  {
-    "name": "Ana Costa",
-    "role": "Arquiteta de Soluções",
-    "bio": "Especialista em colocar IA em produção. MLOps, segurança e governança são sua paixão.",
-    "expertise": ["MLOps", "Arquitetura Cloud", "Data Engineering"],
-    "links": {
-      "linkedin": "#",
-      "email": "ana@sixsen.com.br"
-    },
-    "avatar": "/team/ana.jpg"
-  },
-  {
-    "name": "Carlos Mendoza",
-    "role": "Desenvolvedor de IA",
-    "bio": "Fine-tuning de LLMs e desenvolvimento de agentes inteligentes. Código limpo, resultados sólidos.",
-    "expertise": ["LLMs", "Agentes de IA", "Python/TypeScript"],
-    "links": {
-      "linkedin": "#",
-      "github": "#"
-    },
-    "avatar": "/team/carlos.jpg"
+    "avatar": "https://gravatar.com/avatar/ea68be78c5d9eb26d4e48f0ab8797e6cb976ea90e3ad86d5e44e1a97e3a85dc8"
   }
 ]

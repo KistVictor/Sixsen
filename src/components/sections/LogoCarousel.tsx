@@ -7,12 +7,11 @@ interface LogoCarouselProps {
 const LogoCarousel = ({ title }: LogoCarouselProps) => {
   // Placeholder logos - na implementação real, estes viriam de dados
   const logos = [
-    { name: 'TechCorp', width: 120 },
-    { name: 'RetailMax', width: 140 },
-    { name: 'LegalTech', width: 110 },
-    { name: 'LogiFlow', width: 130 },
-    { name: 'DataPro', width: 125 },
-    { name: 'CloudSync', width: 135 }
+    { name: 'The Wolves Company' },
+    { name: 'Zenblue' },
+    { name: 'Awise' },
+    { name: 'Performance Comercial' },
+    { name: 'Ardos' }
   ];
 
   return (
@@ -28,16 +27,14 @@ const LogoCarousel = ({ title }: LogoCarouselProps) => {
         
         {/* Scrolling logos */}
         <div className="flex space-x-12 animate-marquee">
-          {[...logos, ...logos].map((logo, index) => (
+          {[...logos, ...logos, ...logos].map((logo, index) => (
             <div
               key={`${logo.name}-${index}`}
               className="flex items-center justify-center flex-shrink-0 h-16 opacity-60 hover:opacity-100 transition-opacity"
-              style={{ minWidth: logo.width }}
             >
               {/* Placeholder logo - em produção seriam SVGs reais */}
               <div 
                 className="flex items-center justify-center h-12 px-6 bg-card border border-border rounded-lg"
-                style={{ width: logo.width }}
               >
                 <span className="text-sm font-medium text-muted-foreground">
                   {logo.name}
