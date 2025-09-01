@@ -19,6 +19,61 @@
     ]
   },
   {
+    "slug": "desenvolvimento-produtos-digitais",
+    "title": "Desenvolvimento de Sistemas, Apps e Sites",
+    "shortDescription": "Do zero ao produto em produção. Arquitetura escalável, UX impecável e integrações seguras.",
+    "summary": "Construímos sistemas, aplicativos e sites prontos para escalar e gerar valor rápido.",
+    "problem": "Ideia clara, mas falta capacidade técnica para entregar com qualidade e velocidade",
+    "value": "Produto digital robusto, validado com usuários e pronto para crescer",
+    "painPoints": [
+      "Prazos apertados e backlog acumulado",
+      "Integração com sistemas legados",
+      "Risco de retrabalho por escopo mal definido",
+      "Dificuldade em contratar e orquestrar times"
+    ],
+    "valuePoints": [
+      "Entrega ágil por sprints com metas claras",
+      "Arquitetura escalável e segura (cloud-first)",
+      "UX/UI centrado no usuário com testes",
+      "Qualidade garantida (CI/CD, testes automáticos, observabilidade)"
+    ],
+    "deliverables": [
+      "Workshop de descoberta e definição de escopo",
+      "Arquitetura técnica e design de interface (wireframes e protótipo)",
+      "MVP funcional em produção",
+      "Integrações com APIs/sistemas existentes",
+      "Pipelines CI/CD, monitoramento e alertas",
+      "Documentação técnica e manual do usuário",
+      "Treinamento da equipe e handover"
+    ],
+    "outcomes": [
+      "Time-to-market reduzido",
+      "Experiência do usuário consistente",
+      "Base técnica preparada para novas features",
+      "Menos incidentes e maior confiabilidade"
+    ],
+    "timelineWeeks": "4–12",
+    "investmentRange": "R$ 50k–200k",
+    "faqs": [
+      {
+        "q": "Quais tecnologias vocês usam?",
+        "a": "Escolhemos a stack ideal para o contexto: React/Next.js, React Native ou Flutter, Node.js/Python/.NET, PostgreSQL, serviços AWS/Azure/GCP e infraestrutura como código."
+      },
+      {
+        "q": "Vocês integram com meus sistemas atuais?",
+        "a": "Sim. Trabalhamos com APIs REST/GraphQL, filas e conectores; quando necessário, desenhamos e implementamos APIs para padronizar o ecossistema."
+      },
+      {
+        "q": "Como garantem qualidade e previsibilidade?",
+        "a": "Roadmap por sprints, critérios de aceite claros, testes automatizados, code review, ambiente de homologação e monitoramento ativo em produção."
+      },
+      {
+        "q": "Posso incluir recursos de IA?",
+        "a": "Sim. Podemos incorporar IA onde fizer sentido (busca semântica, automações, copilotos), sempre priorizando valor de negócio e governança de dados."
+      }
+    ]
+  },
+  {
     "slug": "desenvolvimento-ia",
     "title": "Desenvolvimento de IA Customizada",
     "shortDescription": "IA sob medida para seus dados e sistemas. Vantagem competitiva além do software de prateleira.",
