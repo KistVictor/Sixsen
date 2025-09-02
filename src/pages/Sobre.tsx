@@ -10,6 +10,7 @@ import aboutData from '@/data/about.json';
 import team from '@/data/team.json';
 import homeData from '@/data/home.json';
 import CTASection from '@/components/sections/CTASection';
+import { Linkedin } from "lucide-react"
 
 const Sobre = () => {
   return (
@@ -135,17 +136,9 @@ const Sobre = () => {
                           href={member.links.linkedin}
                           className="p-2 rounded-full border border-border hover:border-bridge-blue hover:text-bridge-blue transition-colors"
                           aria-label="LinkedIn"
+                          target='blank'
                         >
-                          <Icon name="users" size={16} />
-                        </a>
-                      )}
-                      {member.links.email && (
-                        <a 
-                          href={`mailto:${member.links.email}`}
-                          className="p-2 rounded-full border border-border hover:border-bridge-blue hover:text-bridge-blue transition-colors"
-                          aria-label="E-mail"
-                        >
-                          <Icon name="mail" size={16} />
+                          <Linkedin name="users" size={16} />
                         </a>
                       )}
                     </div>

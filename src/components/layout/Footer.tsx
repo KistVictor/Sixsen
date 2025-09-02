@@ -20,7 +20,7 @@ const Footer = () => {
       { name: 'LGPD', href: '/lgpd' }
     ],
     social: [
-      { name: 'LinkedIn', href: 'https://linkedin.com/company/sixsen', icon: 'external-link' }
+      { name: 'LinkedIn', href: 'https://linkedin.com/company/sixsen', icon: 'Linkedin' }
     ]
   };
 
@@ -112,7 +112,7 @@ const Footer = () => {
                   </li>
                 ))}
               </ul>
-              <div className="flex space-x-3">
+              {/*<div className="flex space-x-3">
                 {navigation.social.map((item) => (
                   <a
                     key={item.name}
@@ -122,10 +122,10 @@ const Footer = () => {
                     className="flex items-center justify-center w-10 h-10 rounded-xl bg-secondary hover:bg-bridge-blue hover:text-white transition-all focus-ring"
                     aria-label={item.name}
                   >
-                    <Icon name={item.icon as any} size={18} />
+                    <Linkedin />
                   </a>
                 ))}
-              </div>
+              </div>*/}
             </div>
           </div>
 
