@@ -13,7 +13,7 @@ import PoliticaPrivacidade from "./pages/PoliticaPrivacidade";
 import LGPD from "./pages/LGPD";
 import NotFound from "./pages/NotFound";
 import WhatsAppFloat from "./components/common/WhatsAppFloat";
-
+import ScrollToTop from "./components/ScrollToTop";
 const queryClient = new QueryClient();
 
 const App = () => (
@@ -23,6 +23,7 @@ const App = () => (
         <Toaster />
         <Sonner />
         <BrowserRouter>
+          <ScrollToTop />
           <Routes>
             <Route path="/" element={<Index />} />
             <Route path="/servicos" element={<Servicos />} />
@@ -36,7 +37,7 @@ const App = () => (
             <Route path="*" element={<NotFound />} />
           </Routes>
         </BrowserRouter>
-        <WhatsAppFloat />
+        {/*<WhatsAppFloat />*/}
       </div>
     </TooltipProvider>
   </QueryClientProvider>

@@ -8,11 +8,12 @@ import baseData from "../../data/baseData.json"
 const Footer = () => {
   const navigation = {
     main: [
+      { name: 'Home', href: '/' },
       { name: 'Serviços', href: '/servicos' },
-      { name: 'Casos', href: '/casos' },
+      //{ name: 'Casos', href: '/casos' },
       { name: 'Sobre', href: '/sobre' },
-      { name: 'Conteúdos', href: '/conteudos' },
-      { name: 'Contato', href: '/contato' }
+      //{ name: 'Conteúdos', href: '/conteudos' },
+      //{ name: 'Contato', href: '/contato' }
     ],
     legal: [
       { name: 'Política de Privacidade', href: '/politica-de-privacidade' },

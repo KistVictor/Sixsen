@@ -51,18 +51,6 @@ const CTASection = ({
             className="bg-white text-bridge-blue hover:bg-white/90 hover:shadow-elegant focus-ring"
             asChild
           >
-            <a href="https://calendly.com/sixsen" target="_blank" rel="noopener noreferrer">
-              <Icon name="calendar" size={20} />
-              {primaryCTA}
-            </a>
-          </Button>
-          
-          <Button 
-            variant="outline" 
-            size="xl"
-            className="border-white text-white hover:bg-white hover:text-bridge-blue focus-ring"
-            asChild
-          >
             <a href={`https://wa.me/${baseData.phone}?text=Olá! Gostaria de saber mais sobre os serviços da Sixsen.`} target="_blank" rel="noopener noreferrer">
               <Icon name="message-circle" size={20} />
               {secondaryCTA}

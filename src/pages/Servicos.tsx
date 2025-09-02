@@ -9,6 +9,8 @@ import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/
 import Icon from '@/components/ui/Icon';
 import services from '@/data/services.json';
 import servicesFAQ from '@/data/servicesFAQ.json';
+import CTASection from '@/components/sections/CTASection';
+import homeData from '@/data/home.json';
 
 const Servicos = () => {
   const [selectedService, setSelectedService] = useState<string | null>(null);
@@ -251,6 +253,8 @@ const Servicos = () => {
             </div>
           </div>
         </Section>
+        {/* CHAMADA FINAL */}
+        <CTASection {...homeData.finalCTA} />
       </main>
       <Footer />
     </>

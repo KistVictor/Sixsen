@@ -98,7 +98,7 @@ const Index = () => {
           </div>
         </Section>
 
-        {/* CASOS DE SUCESSO */}
+        {/* CASOS DE SUCESSO 
         <Section id="cases" spacing="xl">
           <div className="text-center mb-16">
             <h2 className="font-space font-bold text-3xl md:text-4xl lg:text-5xl mb-4">
@@ -133,7 +133,7 @@ const Index = () => {
               </svg>
             </a>
           </div>
-        </Section>
+        </Section>*/} 
 
         {/* METODOLOGIA */}
         <Section id="methodology" spacing="xl" className="bg-card/30">
@@ -160,7 +160,7 @@ const Index = () => {
           </div>
         </Section>
 
-        {/* CONTEÚDOS */}
+        {/* CONTEÚDOS 
         <Section id="content" spacing="xl">
           <div className="text-center mb-16">
             <h2 className="font-space font-bold text-3xl md:text-4xl lg:text-5xl mb-4">
@@ -194,9 +194,9 @@ const Index = () => {
               </svg>
             </a>
           </div>
-        </Section>
+        </Section>*/}
 
-        {/* CONFIANÇA - TESTIMONIALS */}
+        {/* CONFIANÇA - TESTIMONIALS 
         <Section id="trust" spacing="xl" className="bg-card/30">
           <div className="text-center mb-16">
             <h2 className="font-space font-bold text-3xl md:text-4xl lg:text-5xl mb-4">
@@ -211,9 +211,9 @@ const Index = () => {
             <div className="max-w-4xl mx-auto mb-12">
               <Testimonial {...featuredTestimonial} />
             </div>
-          )}
+          )}*/}
           
-          {/* Placeholder badges/certificates */}
+          {/* Placeholder badges/certificates 
           <div className="flex justify-center items-center space-x-8 opacity-60">
             <div className="flex items-center space-x-2 px-4 py-2 bg-card rounded-lg border border-border">
               <div className="w-8 h-8 bg-gradient-bridge rounded-full flex items-center justify-center">
@@ -228,7 +228,7 @@ const Index = () => {
               <span className="text-sm font-medium">Prêmio Inovação</span>
             </div>
           </div>
-        </Section>
+        </Section>*/}
 
         {/* CHAMADA FINAL */}
         <CTASection {...homeData.finalCTA} />

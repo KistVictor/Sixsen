@@ -3,6 +3,8 @@ import { Button } from '@/components/ui/button';
 import Section from '@/components/layout/Section';
 import NetworkAnimation from '@/components/common/NetworkAnimation';
 import Icon from '@/components/ui/Icon';
+import baseData from "../../data/baseData.json"
+
 interface HeroProps {
   headlines: string[];
   currentHeadline: number;
@@ -51,14 +53,14 @@ const Hero = ({
           animationDelay: '0.4s'
         }}>
             <Button variant="bridge" size="xl" className="focus-ring" asChild>
-              <a href="#contact">
-                <Icon name="calendar" size={20} />
+              <a href={`https://wa.me/${baseData.phone}?text=Olá! Gostaria de saber mais sobre os serviços da Sixsen.`} target="_blank">
+                <Icon name="message-circle" size={20} />
                 {primaryCTA}
               </a>
             </Button>
             
             <Button variant="outline" size="xl" className="focus-ring" asChild>
-              <a href="#cases">
+              <a href="#services">
                 <Icon name="arrow-right" size={20} />
                 {secondaryCTA}
               </a>

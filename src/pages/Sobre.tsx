@@ -8,6 +8,8 @@ import { Badge } from '@/components/ui/badge';
 import Icon from '@/components/ui/Icon';
 import aboutData from '@/data/about.json';
 import team from '@/data/team.json';
+import homeData from '@/data/home.json';
+import CTASection from '@/components/sections/CTASection';
 
 const Sobre = () => {
   return (
@@ -97,7 +99,7 @@ const Sobre = () => {
               </p>
             </div>
 
-            <div className="grid gap-8 md:grid-cols-3 justify-center">
+            <div className="grid gap-8 md:grid-cols-3 justify-center items-center">
               {team.map((member, index) => (
                 <div 
                   key={member.name}
@@ -180,7 +182,7 @@ const Sobre = () => {
             </div>
           </div>
 
-          {/* Partnerships */}
+          {/* Partnerships 
           <div className="mb-16">
             <div className="text-center mb-12">
               <h2 className="font-space font-bold text-3xl mb-4">
@@ -210,9 +212,9 @@ const Sobre = () => {
                 </Badge>
               ))}
             </div>
-          </div>
+          </div>*/}
 
-          {/* CTA */}
+          {/* CTA 
           <div className="text-center">
             <div className="max-w-2xl mx-auto">
               <h2 className="font-space font-bold text-3xl mb-4">
@@ -230,8 +232,11 @@ const Sobre = () => {
                 </Button>
               </div>
             </div>
-          </div>
+          </div>*/}
+          
         </Section>
+        {/* CHAMADA FINAL */}
+        <CTASection {...homeData.finalCTA} />
       </main>
       <Footer />
     </>

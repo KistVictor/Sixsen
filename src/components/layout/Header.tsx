@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
 import Container from './Container';
 import Icon from '@/components/ui/Icon';
+import baseData from "../../data/baseData.json"
 
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -16,11 +17,12 @@ const Header = () => {
   }, []);
 
   const navigation = [
+    { name: 'Home', href: '/' },
     { name: 'Serviços', href: '/servicos' },
-    { name: 'Casos', href: '/casos' },
+    //{ name: 'Casos', href: '/casos' },
     { name: 'Sobre', href: '/sobre' },
-    { name: 'Conteúdos', href: '/conteudos' },
-    { name: 'Contato', href: '/contato' }
+    //{ name: 'Conteúdos', href: '/conteudos' },
+    //{ name: 'Contato', href: '/contato' }
   ];
 
   return (
@@ -63,8 +65,8 @@ const Header = () => {
               className="hidden sm:flex"
               asChild
             >
-              <a href="#contact" className="focus-ring">
-                <Icon name="calendar" size={16} />
+              <a href={`https://wa.me/${baseData.phone}?text=Olá! Gostaria de saber mais sobre os serviços da Sixsen.`} className="focus-ring" target="_blank">
+                <Icon name="message-circle" size={16} />
                 Agendar Diagnóstico
               </a>
             </Button>
