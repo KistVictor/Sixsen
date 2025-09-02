@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
 import Container from './Container';
 import Icon from '@/components/ui/Icon';
+import baseData from "../../data/baseData.json"
 
 const Footer = () => {
   const navigation = {
@@ -73,7 +74,7 @@ const Footer = () => {
                   <strong>Email:</strong> contato@sixsen.com.br
                 </p>
                 <p className="text-sm">
-                  <strong>WhatsApp:</strong> +55 (51) 99951-6231
+                  <strong>WhatsApp:</strong> {baseData.formatedPhone}
                 </p>
               </div>
             </div>

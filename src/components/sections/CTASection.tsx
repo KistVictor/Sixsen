@@ -2,6 +2,7 @@ import React from 'react';
 import { Button } from '@/components/ui/button';
 import Section from '@/components/layout/Section';
 import Icon from '@/components/ui/Icon';
+import baseData from "../../data/baseData.json"
 
 interface CTASectionProps {
   title: string;
@@ -62,7 +63,7 @@ const CTASection = ({
             className="border-white text-white hover:bg-white hover:text-bridge-blue focus-ring"
             asChild
           >
-            <a href="https://wa.me/5511999999999?text=Olá! Gostaria de saber mais sobre os serviços da Sixsen." target="_blank" rel="noopener noreferrer">
+            <a href={`https://wa.me/${baseData.phone}?text=Olá! Gostaria de saber mais sobre os serviços da Sixsen.`} target="_blank" rel="noopener noreferrer">
               <Icon name="message-circle" size={20} />
               {secondaryCTA}
             </a>
