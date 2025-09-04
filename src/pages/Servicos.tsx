@@ -11,6 +11,7 @@ import services from '@/data/services.json';
 import servicesFAQ from '@/data/servicesFAQ.json';
 import CTASection from '@/components/sections/CTASection';
 import homeData from '@/data/home.json';
+import baseData from "../data/baseData.json"
 
 const Servicos = () => {
   const [selectedService, setSelectedService] = useState<string | null>(null);
@@ -60,7 +61,7 @@ const Servicos = () => {
                 <a href="#servicos">Explorar Serviços</a>
               </Button>
               <Button variant="outline" asChild>
-                <Link to="/contato">Falar Conosco</Link>
+                <a href={`https://wa.me/${baseData.phone}?text=Olá! Gostaria de saber mais sobre os serviços da Sixsen.`} target="_blank">Falar Conosco</a>
               </Button>
             </div>
           </div>
@@ -154,7 +155,7 @@ const Servicos = () => {
                       </div>
 
                       <Button variant="bridge" size="sm" asChild>
-                        <Link to="/contato">Solicitar Proposta</Link>
+                        <a href={`https://wa.me/${baseData.phone}?text=Olá! Gostaria de saber mais sobre os serviços da Sixsen.`} target="_blank">Solicitar Proposta</a>
                       </Button>
                     </div>
                   )}
