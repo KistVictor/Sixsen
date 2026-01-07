@@ -1,10 +1,9 @@
-
 import React from 'react';
 import { HashRouter, Routes, Route, useLocation } from 'react-router-dom';
-import Header from './components/Header';
-import Footer from './components/Footer';
-import Home from './pages/Home';
-import AboutPortfolio from './pages/AboutPortfolio';
+import Header from './components/Header.tsx';
+import Footer from './components/Footer.tsx';
+import Home from './pages/Home.tsx';
+import AboutPortfolio from './pages/AboutPortfolio.tsx';
 
 const ScrollToTop = () => {
   const { pathname } = useLocation();

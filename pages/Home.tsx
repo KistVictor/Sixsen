@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { 
   ArrowRight, 
@@ -7,12 +6,11 @@ import {
   ShieldCheck, 
   Lightbulb, 
   Zap, 
-  Bot, 
   Cpu, 
   LineChart, 
   Users 
 } from 'lucide-react';
-import { ValueProp, ServiceItem, ProcessStep } from '../types';
+import { ValueProp, ServiceItem, ProcessStep } from '../types.ts';
 
 const Home: React.FC = () => {
   const schedulingLink = "https://calendar.app.google/vrzVZ7DRChNfGHHM8";
@@ -142,46 +140,6 @@ const Home: React.FC = () => {
                   <h3 className="text-xl font-bold mb-3">{prop.title}</h3>
                   <p className="text-sixsen-gray leading-relaxed text-sm">{prop.description}</p>
                 </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Manifesto */}
-      <section className="relative py-32 px-6 overflow-hidden">
-        <div className="absolute inset-0 bg-sixsen-dark bg-cover bg-center opacity-5 -z-10"></div>
-        <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-3xl md:text-5xl font-bold mb-8">Inteligência com Sentido Humano.</h2>
-          <div className="space-y-6 text-lg md:text-xl text-sixsen-offwhite/80 leading-relaxed font-light">
-            <p>
-              Vivemos um ponto de virada. A tecnologia está disponível, mas a sabedoria para aplicá-la é rara. Na Sixsen, não acreditamos em automatizar pessoas, mas em evoluir processos.
-            </p>
-            <p>
-              Nossa missão é remover o trabalho repetitivo e a ineficiência, permitindo que sua equipe foque no que realmente importa: <span className="text-sixsen-orange font-medium">estratégia, criatividade e relacionamento.</span>
-            </p>
-            <p className="text-2xl font-semibold text-sixsen-offwhite mt-12">
-              Transformamos a "ferramenta distante" em uma "parceira de evolução".
-            </p>
-          </div>
-        </div>
-      </section>
-
-      {/* Our Process */}
-      <section className="py-24 px-6 bg-sixsen-dark">
-        <div className="max-w-7xl mx-auto">
-          <h2 className="text-3xl md:text-5xl font-bold text-center mb-16">Nosso Processo</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-0 relative">
-            {/* Timeline Line Desktop */}
-            <div className="hidden lg:block absolute top-10 left-0 w-full h-0.5 bg-sixsen-orange/20 -z-0"></div>
-            
-            {processSteps.map((step, i) => (
-              <div key={i} className="flex flex-col items-center text-center p-8 relative z-10 group">
-                <div className="w-20 h-20 rounded-full bg-sixsen-dark border-4 border-sixsen-orange flex items-center justify-center text-2xl font-black mb-6 group-hover:scale-110 transition-transform duration-300">
-                  {i + 1}
-                </div>
-                <h3 className="text-xl font-bold mb-4">{step.title}</h3>
-                <p className="text-sixsen-gray text-sm leading-relaxed">{step.description}</p>
               </div>
             ))}
           </div>

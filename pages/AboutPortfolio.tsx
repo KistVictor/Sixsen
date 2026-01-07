@@ -1,9 +1,7 @@
-
 import React from 'react';
-import { Project } from '../types';
+import { Project } from '../types.ts';
 import { ExternalLink, Quote } from 'lucide-react';
 
-// Using the local image file Victor.JPG
 const VICTOR_PHOTO_URL = "./Victor.JPG";
 
 const AboutPortfolio: React.FC = () => {
@@ -15,15 +13,15 @@ const AboutPortfolio: React.FC = () => {
       category: "Pesquisa & Machine Learning",
       challenge: "Identificar padrões de declínio cognitivo em idosos de forma não invasiva.",
       solution: "Estudo e aplicação de Machine Learning (SVM) em dados de Eletroencefalograma (EEG).",
-      result: "83% de precisão na identificação de padrões de atenção. Capacidade de lidar com dados complexos e sensíveis com rigor científico.",
+      result: "83% de precisão na identificação de padrões de atenção.",
       link: "https://drive.google.com/file/d/16SsnDsfiSpX_e8qk5vK3C1edj3s3Pjgr/view"
     },
     {
       title: "Agentes Conversacionais",
       category: "Varejo & Serviços",
-      challenge: "Empresas perdendo vendas por demora no WhatsApp e triagem desorganizada.",
+      challenge: "Empresas perdendo vendas por demora no WhatsApp.",
       solution: "Desenvolvimento de Agentes de IA treinados com a base de conhecimento específica da empresa.",
-      result: "Atendimento 24/7, triagem automática de demandas e aumento na conversão de leads, liberando a equipe humana para casos complexos."
+      result: "Atendimento 24/7 e triagem automática de demandas."
     },
     {
       title: "Awise & QuantoSobra",
@@ -31,7 +29,7 @@ const AboutPortfolio: React.FC = () => {
       role: "Product Owner & Scrum Master",
       challenge: "Necessidade de intersecção entre estratégia e desenvolvimento ágil.",
       delivery: "Liderança técnica, gestão de backlog e facilitação ágil de squads.",
-      result: "Aumento da previsibilidade de entregas e lançamento de features críticas que impulsionaram o crescimento do produto."
+      result: "Aumento da previsibilidade de entregas."
     },
     {
       title: "Infraestrutura & Marketing",
@@ -39,13 +37,12 @@ const AboutPortfolio: React.FC = () => {
       role: "Desenvolvedor Full Stack",
       challenge: "Processos manuais e lentos para otimização de campanhas.",
       delivery: "Criação de ferramentas internas (React/Node/AWS) e infraestrutura escalável.",
-      result: "Automação completa dos processos do time de marketing, garantindo eficiência operacional e decisões baseadas em dados reais."
+      result: "Automação completa dos processos do time de marketing."
     }
   ];
 
   return (
     <div className="pt-32 pb-24">
-      {/* Specialist Hero */}
       <section className="px-6 mb-32">
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-16">
           <div className="w-full md:w-1/2">
@@ -67,23 +64,16 @@ const AboutPortfolio: React.FC = () => {
             <p className="text-2xl font-semibold mb-8 text-sixsen-offwhite/90">
               "A ponte entre a complexidade técnica e o resultado de negócio."
             </p>
-            <p className="text-sixsen-gray leading-relaxed text-lg mb-8">
-              Com uma trajetória que une a visão estratégica de Produto (Product Owner/Scrum Master) à profundidade técnica do Desenvolvimento de Software, fundei a Sixsen com um objetivo claro: desmistificar a IA.
-            </p>
             <p className="text-sixsen-gray leading-relaxed text-lg">
-              Minha experiência liderando times ágeis e desenvolvendo arquiteturas escaláveis permite que a Sixsen entregue não apenas software, mas soluções de negócio robustas que geram valor imediato.
+              Com uma trajetória que une a visão estratégica de Produto à profundidade técnica do desenvolvimento de software, fundei a Sixsen para desmistificar a IA e gerar valor real para o mercado.
             </p>
           </div>
         </div>
       </section>
 
-      {/* Portfolio Grid */}
       <section className="px-6 bg-sixsen-offwhite/5 py-24 border-y border-sixsen-orange/10">
         <div className="max-w-7xl mx-auto">
-          <div className="mb-16">
-            <h2 className="text-4xl font-bold mb-4">Portfólio de Projetos</h2>
-            <p className="text-sixsen-gray">O que já construímos e o impacto gerado.</p>
-          </div>
+          <h2 className="text-4xl font-bold mb-12">Portfólio de Projetos</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {projects.map((project, i) => (
               <div key={i} className="bg-sixsen-dark p-10 rounded-3xl card-border flex flex-col h-full">
@@ -92,34 +82,16 @@ const AboutPortfolio: React.FC = () => {
                     <span className="text-xs font-bold uppercase tracking-widest text-sixsen-orange bg-sixsen-orange/10 px-3 py-1 rounded-full">{project.category}</span>
                     <h3 className="text-2xl font-bold mt-4">{project.title}</h3>
                   </div>
-                  {project.link ? (
-                    <a 
-                      href={project.link} 
-                      target="_blank" 
-                      rel="noopener noreferrer" 
-                      className="text-sixsen-orange hover:text-orange-400 transition-colors"
-                      title="Ver projeto"
-                    >
+                  {project.link && (
+                    <a href={project.link} target="_blank" rel="noopener noreferrer" className="text-sixsen-orange hover:text-orange-400">
                       <ExternalLink size={24} />
                     </a>
-                  ) : (
-                    <ExternalLink className="text-sixsen-gray/50" size={24} />
                   )}
                 </div>
-                
-                <div className="space-y-6 flex-grow">
-                  <div>
-                    <h4 className="text-xs uppercase text-sixsen-orange font-bold tracking-widest mb-1">O Desafio</h4>
-                    <p className="text-sixsen-gray leading-relaxed">{project.challenge}</p>
-                  </div>
-                  <div>
-                    <h4 className="text-xs uppercase text-sixsen-orange font-bold tracking-widest mb-1">{project.delivery ? 'A Entrega' : 'A Solução'}</h4>
-                    <p className="text-sixsen-gray leading-relaxed">{project.delivery || project.solution}</p>
-                  </div>
-                  <div className="pt-4 border-t border-sixsen-offwhite/5">
-                    <h4 className="text-xs uppercase text-sixsen-orange font-bold tracking-widest mb-1">Resultado / Impacto</h4>
-                    <p className="text-sixsen-offwhite leading-relaxed font-medium">{project.result}</p>
-                  </div>
+                <div className="space-y-6 flex-grow text-sixsen-gray">
+                   <p><strong className="text-sixsen-orange uppercase text-[10px] tracking-wider block mb-1">Desafio:</strong> {project.challenge}</p>
+                   <p><strong className="text-sixsen-orange uppercase text-[10px] tracking-wider block mb-1">Solução:</strong> {project.solution || project.delivery}</p>
+                   <p className="text-sixsen-offwhite pt-4 border-t border-sixsen-offwhite/5"><strong className="text-sixsen-orange uppercase text-[10px] tracking-wider block mb-1">Resultado:</strong> {project.result}</p>
                 </div>
               </div>
             ))}
@@ -127,36 +99,14 @@ const AboutPortfolio: React.FC = () => {
         </div>
       </section>
 
-      {/* Founder Vision */}
       <section className="py-32 px-6">
-        <div className="max-w-4xl mx-auto relative">
-          <Quote className="absolute -top-12 -left-12 text-sixsen-orange opacity-20 w-32 h-32 -z-10" />
-          <div className="text-center">
-            <p className="text-2xl md:text-3xl leading-relaxed font-medium italic mb-10 text-sixsen-offwhite">
-              "Não me deslumbro com o código pelo código. Minha obsessão é ver a tecnologia funcionando na mão de quem precisa, gerando valor real, tempo livre e clareza mental. A Sixsen é a materialização dessa crença."
-            </p>
-            <div className="flex flex-col items-center">
-              <div className="w-16 h-1 bg-sixsen-orange mb-4"></div>
-              <p className="font-bold text-lg">Victor</p>
-              <p className="text-sixsen-orange text-sm uppercase tracking-widest">Fundador da Sixsen</p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Portfolio CTA */}
-      <section className="px-6">
-        <div className="max-w-5xl mx-auto rounded-3xl bg-sixsen-orange p-12 text-center text-white">
-          <h2 className="text-3xl md:text-4xl font-bold mb-6">Sua empresa é o nosso próximo case de sucesso.</h2>
-          <p className="text-xl mb-10 opacity-90 max-w-2xl mx-auto">Quer levar a maturidade da Inteligência Artificial para o seu dia a dia operacional?</p>
-          <a 
-            href={whatsappLink}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-block bg-white text-sixsen-dark px-10 py-5 rounded-full font-bold text-lg hover:bg-sixsen-offwhite transition-all shadow-xl"
-          >
-            Falar diretamente com o Victor
-          </a>
+        <div className="max-w-4xl mx-auto text-center">
+          <Quote className="mx-auto text-sixsen-orange opacity-20 w-16 h-16 mb-8" />
+          <p className="text-2xl italic text-sixsen-offwhite mb-8">
+            "Não me deslumbro com o código pelo código. Minha obsessão é ver a tecnologia funcionando na mão de quem precisa, gerando valor real."
+          </p>
+          <p className="font-bold">Victor Kist</p>
+          <p className="text-sixsen-orange text-sm uppercase tracking-widest">Fundador da Sixsen</p>
         </div>
       </section>
     </div>
