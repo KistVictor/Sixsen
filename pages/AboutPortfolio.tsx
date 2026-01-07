@@ -1,8 +1,8 @@
 import React from 'react';
-import { Project } from '../types.ts';
+import { Project } from '../types';
 import { ExternalLink, Quote } from 'lucide-react';
 
-const VICTOR_PHOTO_URL = "./Victor.JPG";
+const VICTOR_PHOTO_URL = "./Victor.jpg";
 
 const AboutPortfolio: React.FC = () => {
   const whatsappLink = "https://api.whatsapp.com/send/?phone=5551999516231&text=Ol%C3%A1%21+Gostaria+de+saber+mais+sobre+os+servi%C3%A7os+da+Sixsen.";

@@ -10,7 +10,7 @@ import {
   LineChart, 
   Users 
 } from 'lucide-react';
-import { ValueProp, ServiceItem, ProcessStep } from '../types.ts';
+import { ValueProp, ServiceItem, ProcessStep } from '../types';
 
 const Home: React.FC = () => {
   const schedulingLink = "https://calendar.app.google/vrzVZ7DRChNfGHHM8";
@@ -146,7 +146,7 @@ const Home: React.FC = () => {
         </div>
       </section>
 
-      {/* Services */}
+      {/* Services Section */}
       <section id="servicos" className="py-24 px-6 bg-sixsen-offwhite/5">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
