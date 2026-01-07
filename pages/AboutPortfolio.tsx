@@ -1,9 +1,9 @@
-
 import React from 'react';
 import { Project } from '../types';
 import { ExternalLink, Quote } from 'lucide-react';
 
-const VICTOR_PHOTO_URL = "./Victor.jpg";
+// URL direta do RAW do GitHub para evitar problemas de caminho relativo no deploy
+const VICTOR_PHOTO_URL = "https://raw.githubusercontent.com/KistVictor/Sixsen/main/Victor.jpg";
 
 const AboutPortfolio: React.FC = () => {
   const projects: Project[] = [
@@ -50,7 +50,11 @@ const AboutPortfolio: React.FC = () => {
               <img 
                 src={VICTOR_PHOTO_URL} 
                 alt="Victor Kist - Fundador da Sixsen" 
-                className="relative rounded-3xl w-full h-[600px] object-cover border border-sixsen-orange/20 shadow-2xl"
+                className="relative rounded-3xl w-full h-[600px] object-cover border border-sixsen-orange/20 shadow-2xl bg-sixsen-dark"
+                onError={(e) => {
+                  const target = e.target as HTMLImageElement;
+                  target.src = "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=1000&auto=format&fit=crop";
+                }}
               />
             </div>
           </div>
