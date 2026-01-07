@@ -3,6 +3,9 @@ import React from 'react';
 import { Project } from '../types';
 import { ExternalLink, Quote } from 'lucide-react';
 
+// Link direto para a imagem do Google Drive usando o ID fornecido: 1hDirbgni7yhFZiMu_jZ0s061otzGjQQv
+const VICTOR_PHOTO_URL = "https://drive.google.com/uc?export=view&id=1hDirbgni7yhFZiMu_jZ0s061otzGjQQv";
+
 const AboutPortfolio: React.FC = () => {
   const whatsappLink = "https://api.whatsapp.com/send/?phone=5551999516231&text=Ol%C3%A1%21+Gostaria+de+saber+mais+sobre+os+servi%C3%A7os+da+Sixsen.";
 
@@ -12,7 +15,8 @@ const AboutPortfolio: React.FC = () => {
       category: "Pesquisa & Machine Learning",
       challenge: "Identificar padrões de declínio cognitivo em idosos de forma não invasiva.",
       solution: "Estudo e aplicação de Machine Learning (SVM) em dados de Eletroencefalograma (EEG).",
-      result: "83% de precisão na identificação de padrões de atenção. Capacidade de lidar com dados complexos e sensíveis com rigor científico."
+      result: "83% de precisão na identificação de padrões de atenção. Capacidade de lidar com dados complexos e sensíveis com rigor científico.",
+      link: "https://drive.google.com/file/d/16SsnDsfiSpX_e8qk5vK3C1edj3s3Pjgr/view"
     },
     {
       title: "Agentes Conversacionais",
@@ -48,9 +52,13 @@ const AboutPortfolio: React.FC = () => {
             <div className="relative group">
               <div className="absolute -inset-2 bg-gradient-to-r from-sixsen-orange to-orange-400 rounded-3xl blur opacity-25 group-hover:opacity-40 transition duration-1000"></div>
               <img 
-                src="victor.png" 
-                alt="Victor - Fundador da Sixsen" 
-                className="relative rounded-2xl w-full h-[600px] object-cover border border-sixsen-orange/20 shadow-2xl"
+                src={VICTOR_PHOTO_URL} 
+                alt="Victor Kist - Fundador da Sixsen" 
+                className="relative rounded-3xl w-full h-[600px] object-cover border border-sixsen-orange/20 shadow-2xl"
+                onError={(e) => {
+                  // Fallback para uma imagem genérica de alta qualidade caso o link do drive falhe (ex: permissões)
+                  (e.target as HTMLImageElement).src = "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=1000&auto=format&fit=crop";
+                }}
               />
             </div>
           </div>
@@ -85,7 +93,19 @@ const AboutPortfolio: React.FC = () => {
                     <span className="text-xs font-bold uppercase tracking-widest text-sixsen-orange bg-sixsen-orange/10 px-3 py-1 rounded-full">{project.category}</span>
                     <h3 className="text-2xl font-bold mt-4">{project.title}</h3>
                   </div>
-                  <ExternalLink className="text-sixsen-gray/50" size={24} />
+                  {project.link ? (
+                    <a 
+                      href={project.link} 
+                      target="_blank" 
+                      rel="noopener noreferrer" 
+                      className="text-sixsen-orange hover:text-orange-400 transition-colors"
+                      title="Ver projeto"
+                    >
+                      <ExternalLink size={24} />
+                    </a>
+                  ) : (
+                    <ExternalLink className="text-sixsen-gray/50" size={24} />
+                  )}
                 </div>
                 
                 <div className="space-y-6 flex-grow">
