@@ -3,8 +3,8 @@ import React from 'react';
 import { Project } from '../types';
 import { ExternalLink, Quote } from 'lucide-react';
 
-// Link direto para a imagem do Google Drive usando o ID fornecido: 1hDirbgni7yhFZiMu_jZ0s061otzGjQQv
-const VICTOR_PHOTO_URL = "https://drive.google.com/uc?export=view&id=1hDirbgni7yhFZiMu_jZ0s061otzGjQQv";
+// Using the local image file Victor.JPG
+const VICTOR_PHOTO_URL = "./Victor.JPG";
 
 const AboutPortfolio: React.FC = () => {
   const whatsappLink = "https://api.whatsapp.com/send/?phone=5551999516231&text=Ol%C3%A1%21+Gostaria+de+saber+mais+sobre+os+servi%C3%A7os+da+Sixsen.";
@@ -56,7 +56,6 @@ const AboutPortfolio: React.FC = () => {
                 alt="Victor Kist - Fundador da Sixsen" 
                 className="relative rounded-3xl w-full h-[600px] object-cover border border-sixsen-orange/20 shadow-2xl"
                 onError={(e) => {
-                  // Fallback para uma imagem genérica de alta qualidade caso o link do drive falhe (ex: permissões)
                   (e.target as HTMLImageElement).src = "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=1000&auto=format&fit=crop";
                 }}
               />

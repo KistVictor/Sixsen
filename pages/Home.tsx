@@ -26,7 +26,7 @@ const Home: React.FC = () => {
     },
     {
       title: "Personalização Real",
-      description: "Seu negócio é unique. Nossos agentes e automações são desenvolvidos sob medida para o seu fluxo, respeitando sua cultura.",
+      description: "Seu negócio é único. Nossos agentes e automações são desenvolvidos sob medida para o seu fluxo, respeitando sua cultura.",
       icon: <Settings className="w-6 h-6 text-sixsen-orange" />
     },
     {
@@ -150,7 +150,7 @@ const Home: React.FC = () => {
 
       {/* Manifesto */}
       <section className="relative py-32 px-6 overflow-hidden">
-        <div className="absolute inset-0 bg-[url('https://picsum.photos/1920/1080?grayscale')] bg-cover bg-center opacity-5 -z-10"></div>
+        <div className="absolute inset-0 bg-sixsen-dark bg-cover bg-center opacity-5 -z-10"></div>
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-3xl md:text-5xl font-bold mb-8">Inteligência com Sentido Humano.</h2>
           <div className="space-y-6 text-lg md:text-xl text-sixsen-offwhite/80 leading-relaxed font-light">
