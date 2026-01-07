@@ -4,7 +4,6 @@ import { Project } from '../types';
 import { ExternalLink, Quote } from 'lucide-react';
 
 const VICTOR_PHOTO_URL = "./Victor.jpg";
-const VICTOR_GITHUB_RAW = "https://raw.githubusercontent.com/KistVictor/Sixsen/main/Victor.jpg";
 
 const AboutPortfolio: React.FC = () => {
   const projects: Project[] = [
@@ -52,14 +51,6 @@ const AboutPortfolio: React.FC = () => {
                 src={VICTOR_PHOTO_URL} 
                 alt="Victor Kist - Fundador da Sixsen" 
                 className="relative rounded-3xl w-full h-[600px] object-cover border border-sixsen-orange/20 shadow-2xl"
-                onError={(e) => {
-                  const target = e.target as HTMLImageElement;
-                  if (target.src !== VICTOR_GITHUB_RAW) {
-                    target.src = VICTOR_GITHUB_RAW;
-                  } else {
-                    target.src = "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=1000&auto=format&fit=crop";
-                  }
-                }}
               />
             </div>
           </div>
