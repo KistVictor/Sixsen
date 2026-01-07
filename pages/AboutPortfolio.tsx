@@ -53,7 +53,7 @@ const AboutPortfolio: React.FC = () => {
                 className="relative rounded-3xl w-full h-[600px] object-cover border border-sixsen-orange/20 shadow-2xl bg-sixsen-dark"
                 onError={(e) => {
                   const target = e.target as HTMLImageElement;
-                  target.src = "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=1000&auto=format&fit=crop";
+                  target.src = "https://media.licdn.com/dms/image/v2/D4D03AQGJjnVduzbjwA/profile-displayphoto-shrink_200_200/B4DZQUCcwpG0Ac-/0/1735502974464?e=1769644800&v=beta&t=nuHeXab9AbKpNA8YjDg9P3PZ713CDM2bxb1Sp7G5gtc";
                 }}
               />
             </div>
