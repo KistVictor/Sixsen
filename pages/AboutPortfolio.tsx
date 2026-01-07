@@ -2,11 +2,16 @@ import React from 'react';
 import { Project } from '../types';
 import { ExternalLink, Quote } from 'lucide-react';
 
+// Tentativa 1: Imagem local na raiz (Victor.jpg)
 const VICTOR_PHOTO_URL = "./Victor.jpg";
 
-const AboutPortfolio: React.FC = () => {
-  const whatsappLink = "https://api.whatsapp.com/send/?phone=5551999516231&text=Ol%C3%A1%21+Gostaria+de+saber+mais+sobre+os+servi%C3%A7os+da+Sixsen.";
+// Tentativa 2: Imagem local alternativa (Victor.JPG) por causa do Linux no Netlify
+const VICTOR_PHOTO_ALT_URL = "./Victor.JPG";
 
+// Fallback: Link RAW do GitHub para garantir que apareça se o deploy falhar
+const VICTOR_GITHUB_RAW = "https://raw.githubusercontent.com/KistVictor/Sixsen/main/Victor.jpg";
+
+const AboutPortfolio: React.FC = () => {
   const projects: Project[] = [
     {
       title: "Mapping Attention (IA na Saúde)",
@@ -53,7 +58,14 @@ const AboutPortfolio: React.FC = () => {
                 alt="Victor Kist - Fundador da Sixsen" 
                 className="relative rounded-3xl w-full h-[600px] object-cover border border-sixsen-orange/20 shadow-2xl"
                 onError={(e) => {
-                  (e.target as HTMLImageElement).src = "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=1000&auto=format&fit=crop";
+                  const target = e.target as HTMLImageElement;
+                  if (target.src.includes("Victor.jpg") && !target.src.includes("raw.github")) {
+                    target.src = VICTOR_PHOTO_ALT_URL;
+                  } else if (target.src.includes("Victor.JPG")) {
+                    target.src = VICTOR_GITHUB_RAW;
+                  } else {
+                    target.src = "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=1000&auto=format&fit=crop";
+                  }
                 }}
               />
             </div>

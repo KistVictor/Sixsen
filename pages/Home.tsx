@@ -62,13 +62,6 @@ const Home: React.FC = () => {
     }
   ];
 
-  const processSteps: ProcessStep[] = [
-    { title: "Diagnóstico Lúcido", description: "Mapeamos suas dores e identificamos onde a IA gera impacto imediato e real no ROI." },
-    { title: "Estratégia Personalizada", description: "Desenhamos a solução ideal — seja agente ou automação — alinhada ao seu orçamento." },
-    { title: "Implementação Ágil", description: "Desenvolvimento e integração focados em segurança, estabilidade e experiência do usuário." },
-    { title: "Acompanhamento", description: "Monitoramos resultados continuamente para garantir que a tecnologia sirva ao propósito." }
-  ];
-
   const companies = [
     "Facta Financeira",
     "The Wolves Company",
@@ -79,7 +72,6 @@ const Home: React.FC = () => {
 
   return (
     <div className="overflow-hidden">
-      {/* Hero Section */}
       <section className="relative pt-32 pb-20 md:pt-48 md:pb-32 px-6">
         <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full h-[600px] bg-gradient-to-b from-sixsen-orange/10 to-transparent blur-3xl -z-10 opacity-30"></div>
         <div className="max-w-7xl mx-auto text-center">
@@ -111,7 +103,6 @@ const Home: React.FC = () => {
         </div>
       </section>
 
-      {/* Social Proof */}
       <section className="py-12 border-y border-sixsen-offwhite/5 bg-sixsen-dark/50">
         <div className="max-w-7xl mx-auto px-6 text-center">
           <p className="text-xs uppercase tracking-widest text-sixsen-gray mb-8">Empresas que evoluem seus processos com a Sixsen:</p>
@@ -123,7 +114,6 @@ const Home: React.FC = () => {
         </div>
       </section>
 
-      {/* Why Sixsen */}
       <section className="py-24 px-6 bg-sixsen-dark">
         <div className="max-w-7xl mx-auto">
           <div className="mb-16">
@@ -146,7 +136,6 @@ const Home: React.FC = () => {
         </div>
       </section>
 
-      {/* Services Section */}
       <section id="servicos" className="py-24 px-6 bg-sixsen-offwhite/5">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
@@ -172,22 +161,6 @@ const Home: React.FC = () => {
               </div>
             ))}
           </div>
-        </div>
-      </section>
-
-      {/* Final CTA */}
-      <section className="py-24 px-6 bg-sixsen-orange text-white">
-        <div className="max-w-5xl mx-auto text-center">
-          <h2 className="text-4xl md:text-6xl font-black mb-6">A inteligência é artificial. <br /> O progresso é humano.</h2>
-          <p className="text-xl md:text-2xl mb-12 opacity-90 font-medium">Vamos descobrir como a IA pode liberar o potencial da sua empresa hoje?</p>
-          <a 
-            href={schedulingLink}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-block bg-white text-sixsen-dark px-10 py-5 rounded-full font-bold text-lg hover:bg-sixsen-offwhite transition-all shadow-2xl"
-          >
-            Agendar Reunião de Diagnóstico
-          </a>
         </div>
       </section>
     </div>
