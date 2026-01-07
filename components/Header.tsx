@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { Menu, X } from 'lucide-react';
@@ -19,7 +18,6 @@ const Header: React.FC = () => {
   const navLinks = [
     { name: 'Home', path: '/' },
     { name: 'Sobre e Portfólio', path: '/sobre' },
-    { name: 'Serviços', path: '/#servicos' },
   ];
 
   const schedulingLink = "https://calendar.app.google/vrzVZ7DRChNfGHHM8";

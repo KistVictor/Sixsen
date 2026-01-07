@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { 
   ArrowRight, 
@@ -9,7 +8,11 @@ import {
   Zap, 
   Cpu, 
   LineChart, 
-  Users 
+  Users,
+  Search,
+  PenTool,
+  Rocket,
+  RefreshCw
 } from 'lucide-react';
 import { ValueProp, ServiceItem } from '../types';
 
@@ -37,6 +40,41 @@ const Home: React.FC = () => {
       title: "Clareza que Conecta",
       description: "Sem 'caixas pretas'. Entregamos soluções que você entende, controla e vê valor imediato.",
       icon: <Users className="w-6 h-6 text-sixsen-orange" />
+    }
+  ];
+
+  const processSteps = [
+    {
+      number: "01",
+      title: "Diagnóstico de Clareza",
+      description: "Antes de escrever qualquer linha de código, nós ouvimos. Entendemos suas dores operacionais, gargalos de atendimento e objetivos de negócio.",
+      happening: "Reunião de imersão para mapear onde a ineficiência está custando dinheiro.",
+      result: "Um plano de ação focado na dor real, não na tecnologia da moda.",
+      icon: <Search className="w-5 h-5" />
+    },
+    {
+      number: "02",
+      title: "Arquitetura Personalizada",
+      description: "Fugimos das soluções genéricas de prateleira. Desenhamos a estratégia de IA e automação específica para o seu fluxo de trabalho, garantindo conformidade com a LGPD.",
+      happening: "Definição das ferramentas, fluxos de dados e regras de negócio.",
+      result: "Um projeto sob medida que respeita a cultura da sua empresa.",
+      icon: <PenTool className="w-5 h-5" />
+    },
+    {
+      number: "03",
+      title: "Implementação Ágil",
+      description: "É hora de construir a ponte. Desenvolvemos, integramos seus sistemas atuais (CRM, ERP, WhatsApp) e testamos rigorosamente.",
+      happening: "Configuração dos agentes de IA e automação de processos.",
+      result: "A tecnologia começa a rodar, transformando tarefas manuais em processos automáticos.",
+      icon: <Rocket className="w-5 h-5" />
+    },
+    {
+      number: "04",
+      title: "Acompanhamento e Evolução",
+      description: "A IA precisa de direção. Não entregamos e \"sumimos\". Monitoramos o desempenho e ajustamos a rota para garantir que a solução continue gerando valor.",
+      happening: "Análise de métricas e otimização contínua.",
+      result: "Sua empresa ganha maturidade digital e escala com segurança.",
+      icon: <RefreshCw className="w-5 h-5" />
     }
   ];
 
@@ -130,6 +168,46 @@ const Home: React.FC = () => {
                 <div>
                   <h3 className="text-xl font-bold mb-3">{prop.title}</h3>
                   <p className="text-sixsen-gray leading-relaxed text-sm">{prop.description}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="py-24 px-6 bg-sixsen-dark border-t border-sixsen-offwhite/5">
+        <div className="max-w-7xl mx-auto">
+          <div className="text-center mb-16">
+            <span className="text-sixsen-orange font-bold uppercase tracking-widest text-sm mb-4 block">Metodologia</span>
+            <h2 className="text-3xl md:text-5xl font-bold mb-4">Do caos à clareza em 4 passos</h2>
+            <p className="text-sixsen-gray max-w-2xl mx-auto">Nosso processo é estruturado para garantir que a tecnologia sirva ao seu negócio, e não o contrário.</p>
+          </div>
+          
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            {processSteps.map((step, i) => (
+              <div key={i} className="group relative bg-sixsen-offwhite/5 p-10 rounded-3xl card-border flex flex-col gap-6 overflow-hidden">
+                <div className="absolute -top-10 -right-10 text-9xl font-black text-sixsen-orange/5 select-none transition-all group-hover:text-sixsen-orange/10 group-hover:scale-110">
+                  {step.number}
+                </div>
+                
+                <div className="flex items-center gap-4">
+                  <div className="p-2.5 bg-sixsen-orange/20 rounded-lg text-sixsen-orange">
+                    {step.icon}
+                  </div>
+                  <h3 className="text-2xl font-bold">{step.number}. {step.title}</h3>
+                </div>
+
+                <p className="text-sixsen-gray leading-relaxed">{step.description}</p>
+
+                <div className="mt-4 space-y-4 pt-6 border-t border-sixsen-offwhite/10">
+                  <div>
+                    <span className="text-sixsen-orange text-[10px] font-bold uppercase tracking-widest block mb-2">O que acontece:</span>
+                    <p className="text-sm text-sixsen-offwhite/80">{step.happening}</p>
+                  </div>
+                  <div>
+                    <span className="text-sixsen-orange text-[10px] font-bold uppercase tracking-widest block mb-2">O resultado:</span>
+                    <p className="text-sm font-medium text-sixsen-offwhite">{step.result}</p>
+                  </div>
                 </div>
               </div>
             ))}

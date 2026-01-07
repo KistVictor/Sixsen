@@ -31,12 +31,12 @@ const AboutPortfolio: React.FC = () => {
       result: "Aumento da previsibilidade de entregas."
     },
     {
-      title: "Infraestrutura & Marketing",
-      category: "Full Stack Development",
-      role: "Desenvolvedor Full Stack",
-      challenge: "Processos manuais e lentos para otimização de campanhas.",
-      delivery: "Criação de ferramentas internas (React/Node/AWS) e infraestrutura escalável.",
-      result: "Automação completa dos processos do time de marketing."
+      title: "Finanças Pro (SaaS)",
+      category: "Desenvolvimento de Produto",
+      challenge: "Microempreendedores e autônomos com dificuldade em organizar gastos sem ferramentas complexas.",
+      solution: "Criação de um software gratuito para controle de custos e despesas com interface simplificada.",
+      result: "Democratização da gestão financeira para usuários que buscam agilidade e clareza nos números.",
+      link: "https://www.linkedin.com/feed/update/urn:li:activity:7413647090574303233/"
     }
   ];
 
@@ -50,7 +50,7 @@ const AboutPortfolio: React.FC = () => {
               <img 
                 src={VICTOR_PHOTO_URL} 
                 alt="Victor Kist - Fundador da Sixsen" 
-                className="relative rounded-3xl w-full h-[600px] object-cover border border-sixsen-orange/20 shadow-2xl bg-sixsen-dark"
+                className="relative rounded-3xl w-full h-[400px] md:h-[600px] object-cover border border-sixsen-orange/20 shadow-2xl bg-sixsen-dark"
                 onError={(e) => {
                   const target = e.target as HTMLImageElement;
                   target.src = "https://media.licdn.com/dms/image/v2/D4D03AQGJjnVduzbjwA/profile-displayphoto-shrink_200_200/B4DZQUCcwpG0Ac-/0/1735502974464?e=1769644800&v=beta&t=nuHeXab9AbKpNA8YjDg9P3PZ713CDM2bxb1Sp7G5gtc";
