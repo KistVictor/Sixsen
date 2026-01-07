@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { 
   ArrowRight, 
@@ -10,7 +11,7 @@ import {
   LineChart, 
   Users 
 } from 'lucide-react';
-import { ValueProp, ServiceItem, ProcessStep } from '../types';
+import { ValueProp, ServiceItem } from '../types';
 
 const Home: React.FC = () => {
   const schedulingLink = "https://calendar.app.google/vrzVZ7DRChNfGHHM8";
