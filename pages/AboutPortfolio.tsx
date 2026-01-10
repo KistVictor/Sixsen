@@ -2,8 +2,8 @@ import React from 'react';
 import { Project } from '../types';
 import { ExternalLink, Quote } from 'lucide-react';
 
-// URL direta do RAW do GitHub para evitar problemas de caminho relativo no deploy
-const VICTOR_PHOTO_URL = "https://raw.githubusercontent.com/KistVictor/Sixsen/main/Victor.jpg";
+// Imagem servida da pasta public/ pelo Vite
+const VICTOR_PHOTO_URL = "/victor.jpg";
 
 const AboutPortfolio: React.FC = () => {
   const projects: Project[] = [
@@ -47,9 +47,9 @@ const AboutPortfolio: React.FC = () => {
           <div className="w-full md:w-1/2">
             <div className="relative group">
               <div className="absolute -inset-2 bg-gradient-to-r from-sixsen-orange to-orange-400 rounded-3xl blur opacity-25 group-hover:opacity-40 transition duration-1000"></div>
-              <img 
-                src={VICTOR_PHOTO_URL} 
-                alt="Victor Kist - Fundador da Sixsen" 
+              <img
+                src={VICTOR_PHOTO_URL}
+                alt="Victor Kist - Fundador da Sixsen"
                 className="relative rounded-3xl w-full h-[400px] md:h-[600px] object-cover border border-sixsen-orange/20 shadow-2xl bg-sixsen-dark"
                 onError={(e) => {
                   const target = e.target as HTMLImageElement;
@@ -89,9 +89,9 @@ const AboutPortfolio: React.FC = () => {
                   )}
                 </div>
                 <div className="space-y-6 flex-grow text-sixsen-gray">
-                   <p><strong className="text-sixsen-orange uppercase text-[10px] tracking-wider block mb-1">Desafio:</strong> {project.challenge}</p>
-                   <p><strong className="text-sixsen-orange uppercase text-[10px] tracking-wider block mb-1">Solução:</strong> {project.solution || project.delivery}</p>
-                   <p className="text-sixsen-offwhite pt-4 border-t border-sixsen-offwhite/5"><strong className="text-sixsen-orange uppercase text-[10px] tracking-wider block mb-1">Resultado:</strong> {project.result}</p>
+                  <p><strong className="text-sixsen-orange uppercase text-[10px] tracking-wider block mb-1">Desafio:</strong> {project.challenge}</p>
+                  <p><strong className="text-sixsen-orange uppercase text-[10px] tracking-wider block mb-1">Solução:</strong> {project.solution || project.delivery}</p>
+                  <p className="text-sixsen-offwhite pt-4 border-t border-sixsen-offwhite/5"><strong className="text-sixsen-orange uppercase text-[10px] tracking-wider block mb-1">Resultado:</strong> {project.result}</p>
                 </div>
               </div>
             ))}
