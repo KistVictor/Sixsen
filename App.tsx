@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { HashRouter, Routes, Route, useLocation } from 'react-router-dom';
+import { BrowserRouter, Routes, Route, useLocation } from 'react-router-dom';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import Home from './pages/Home';
@@ -16,7 +16,7 @@ const ScrollToTop = () => {
 
 const App: React.FC = () => {
   return (
-    <HashRouter>
+    <BrowserRouter>
       <div className="min-h-screen flex flex-col font-sans selection:bg-sixsen-orange selection:text-white">
         <ScrollToTop />
         <Header />
@@ -28,7 +28,7 @@ const App: React.FC = () => {
         </main>
         <Footer />
       </div>
-    </HashRouter>
+    </BrowserRouter>
   );
 };
 
