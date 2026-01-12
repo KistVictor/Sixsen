@@ -36,7 +36,7 @@ const AboutPortfolio: React.FC = () => {
       challenge: "Microempreendedores e autônomos com dificuldade em organizar gastos sem ferramentas complexas.",
       solution: "Criação de um software gratuito para controle de custos e despesas com interface simplificada.",
       result: "Democratização da gestão financeira para usuários que buscam agilidade e clareza nos números.",
-      link: "https://www.linkedin.com/feed/update/urn:li:activity:7413647090574303233/"
+      link: "https://priceless.sixsen.com.br/"
     }
   ];
 
