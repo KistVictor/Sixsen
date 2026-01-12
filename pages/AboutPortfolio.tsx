@@ -28,7 +28,8 @@ const AboutPortfolio: React.FC = () => {
       category: "Varejo & Serviços",
       challenge: "Empresas perdendo vendas por demora no WhatsApp.",
       solution: "Desenvolvimento de Agentes de IA treinados com a base de conhecimento específica da empresa.",
-      result: "Atendimento 24/7 e triagem automática de demandas."
+      result: "Atendimento 24/7 e triagem automática de demandas.",
+      link: "https://www.linkedin.com/feed/update/urn:li:activity:7388678397696135168/"
     },
     {
       title: "Awise & QuantoSobra",
