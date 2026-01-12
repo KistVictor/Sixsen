@@ -16,6 +16,14 @@ const AboutPortfolio: React.FC = () => {
       link: "https://drive.google.com/file/d/16SsnDsfiSpX_e8qk5vK3C1edj3s3Pjgr/view"
     },
     {
+      title: "Finanças Pro (SaaS)",
+      category: "Desenvolvimento de Produto",
+      challenge: "Microempreendedores e autônomos com dificuldade em organizar gastos sem ferramentas complexas.",
+      solution: "Criação de um software gratuito para controle de custos e despesas com interface simplificada.",
+      result: "Democratização da gestão financeira para usuários que buscam agilidade e clareza nos números.",
+      link: "https://priceless.sixsen.com.br/"
+    },
+    {
       title: "Agentes Conversacionais",
       category: "Varejo & Serviços",
       challenge: "Empresas perdendo vendas por demora no WhatsApp.",
@@ -29,14 +37,6 @@ const AboutPortfolio: React.FC = () => {
       challenge: "Necessidade de intersecção entre estratégia e desenvolvimento ágil.",
       delivery: "Liderança técnica, gestão de backlog e facilitação ágil de squads.",
       result: "Aumento da previsibilidade de entregas."
-    },
-    {
-      title: "Finanças Pro (SaaS)",
-      category: "Desenvolvimento de Produto",
-      challenge: "Microempreendedores e autônomos com dificuldade em organizar gastos sem ferramentas complexas.",
-      solution: "Criação de um software gratuito para controle de custos e despesas com interface simplificada.",
-      result: "Democratização da gestão financeira para usuários que buscam agilidade e clareza nos números.",
-      link: "https://priceless.sixsen.com.br/"
     }
   ];
 
