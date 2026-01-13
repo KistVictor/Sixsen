@@ -25,7 +25,7 @@ const Header: React.FC = () => {
   return (
     <header className={`fixed w-full z-50 transition-all duration-300 ${scrolled ? 'bg-sixsen-dark/90 backdrop-blur-md py-4 border-b border-sixsen-orange/10' : 'bg-transparent py-6'}`}>
       <div className="max-w-7xl mx-auto px-6 flex justify-between items-center">
-        <Link to="/" className="text-2xl font-extrabold tracking-tighter text-sixsen-offwhite hover:text-sixsen-orange transition-colors">
+        <Link to="/" className="font-bruno text-2xl font-extrabold tracking-tighter text-sixsen-offwhite hover:text-sixsen-orange transition-colors">
           Sixsen<span className="text-sixsen-orange">.</span>
         </Link>
 

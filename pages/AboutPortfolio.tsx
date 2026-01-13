@@ -61,12 +61,12 @@ const AboutPortfolio: React.FC = () => {
           </div>
           <div className="w-full md:w-1/2">
             <span className="text-sixsen-orange font-bold uppercase tracking-widest text-sm mb-4 block">Fundador & Especialista</span>
-            <h1 className="text-5xl md:text-6xl font-black mb-6">Victor <br /><span className="text-sixsen-orange">Kist</span></h1>
+            <h1 className="text-5xl md:text-6xl font-black mb-6 font-bruno">Victor <br /><span className="text-sixsen-orange">Kist</span></h1>
             <p className="text-2xl font-semibold mb-8 text-sixsen-offwhite/90">
               "A ponte entre a complexidade técnica e o resultado de negócio."
             </p>
             <p className="text-sixsen-gray leading-relaxed text-lg">
-              Com uma trajetória que une a visão estratégica de Produto à profundidade técnica do desenvolvimento de software, fundei a Sixsen para desmistificar a IA e gerar valor real para o mercado.
+              Com uma trajetória que une a visão estratégica de Produto à profundidade técnica do desenvolvimento de software, fundei a <span className="font-bruno">Sixsen</span> para desmistificar a IA e gerar valor real para o mercado.
             </p>
           </div>
         </div>
@@ -106,8 +106,8 @@ const AboutPortfolio: React.FC = () => {
           <p className="text-2xl italic text-sixsen-offwhite mb-8">
             "Não me deslumbro com o código pelo código. Minha obsessão é ver a tecnologia funcionando na mão de quem precisa, gerando valor real."
           </p>
-          <p className="font-bold">Victor Kist</p>
-          <p className="text-sixsen-orange text-sm uppercase tracking-widest">Fundador da Sixsen</p>
+          <p className="font-bold font-bruno">Victor Kist</p>
+          <p className="text-sixsen-orange text-sm uppercase tracking-widest">Fundador da <span className="font-bruno">Sixsen</span></p>
         </div>
       </section>
     </div>

@@ -1,13 +1,13 @@
 import React from 'react';
-import { 
-  ArrowRight, 
-  MessageSquare, 
-  Settings, 
-  ShieldCheck, 
-  Lightbulb, 
-  Zap, 
-  Cpu, 
-  LineChart, 
+import {
+  ArrowRight,
+  MessageSquare,
+  Settings,
+  ShieldCheck,
+  Lightbulb,
+  Zap,
+  Cpu,
+  LineChart,
   Users,
   Search,
   PenTool,
@@ -122,7 +122,7 @@ const Home: React.FC = () => {
             Saia do experimental e entre na era da maturidade digital. Criamos agentes de IA e automações personalizadas que transformam complexidade em clareza.
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-6">
-            <a 
+            <a
               href={schedulingLink}
               target="_blank"
               rel="noopener noreferrer"
@@ -130,7 +130,7 @@ const Home: React.FC = () => {
             >
               Agendar Diagnóstico Gratuito <ArrowRight size={20} />
             </a>
-            <a 
+            <a
               href={whatsappLink}
               target="_blank"
               rel="noopener noreferrer"
@@ -144,7 +144,7 @@ const Home: React.FC = () => {
 
       <section className="py-12 border-y border-sixsen-offwhite/5 bg-sixsen-dark/50">
         <div className="max-w-7xl mx-auto px-6 text-center">
-          <p className="text-xs uppercase tracking-widest text-sixsen-gray mb-8">Empresas que evoluem seus processos com a Sixsen:</p>
+          <p className="text-xs uppercase tracking-widest text-sixsen-gray mb-8">Empresas que evoluem seus processos com a <span className="font-bruno">Sixsen</span>:</p>
           <div className="flex flex-wrap justify-center items-center gap-8 md:gap-16 opacity-40 grayscale">
             {companies.map((company, idx) => (
               <span key={idx} className="text-xl md:text-2xl font-bold tracking-tighter whitespace-nowrap">{company}</span>
@@ -156,7 +156,7 @@ const Home: React.FC = () => {
       <section className="py-24 px-6 bg-sixsen-dark">
         <div className="max-w-7xl mx-auto">
           <div className="mb-16">
-            <h2 className="text-3xl md:text-5xl font-bold mb-4">Por que escolher a Sixsen?</h2>
+            <h2 className="text-3xl md:text-5xl font-bold mb-4">Por que escolher a <span className="font-bruno">Sixsen</span>?</h2>
             <div className="w-20 h-1 bg-sixsen-orange"></div>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -182,14 +182,14 @@ const Home: React.FC = () => {
             <h2 className="text-3xl md:text-5xl font-bold mb-4">Do caos à clareza em 4 passos</h2>
             <p className="text-sixsen-gray max-w-2xl mx-auto">Nosso processo é estruturado para garantir que a tecnologia sirva ao seu negócio, e não o contrário.</p>
           </div>
-          
+
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {processSteps.map((step, i) => (
               <div key={i} className="group relative bg-sixsen-offwhite/5 p-10 rounded-3xl card-border flex flex-col gap-6 overflow-hidden">
                 <div className="absolute -top-10 -right-10 text-9xl font-black text-sixsen-orange/5 select-none transition-all group-hover:text-sixsen-orange/10 group-hover:scale-110">
                   {step.number}
                 </div>
-                
+
                 <div className="flex items-center gap-4">
                   <div className="p-2.5 bg-sixsen-orange/20 rounded-lg text-sixsen-orange">
                     {step.icon}
@@ -228,7 +228,7 @@ const Home: React.FC = () => {
                 <div>
                   <h3 className="text-2xl font-bold mb-4">{service.title}</h3>
                   <p className="text-sixsen-gray leading-relaxed mb-6">{service.description}</p>
-                  <a 
+                  <a
                     href={whatsappLink}
                     target="_blank"
                     rel="noopener noreferrer"
