@@ -33,11 +33,12 @@ const AboutPortfolio: React.FC = () => {
     },
     {
       title: "Awise & QuantoSobra",
-      category: "Product Leadership",
+      category: "Liderança de produto",
       role: "Product Owner & Scrum Master",
       challenge: "Necessidade de intersecção entre estratégia e desenvolvimento ágil.",
       delivery: "Liderança técnica, gestão de backlog e facilitação ágil de squads.",
-      result: "Aumento da previsibilidade de entregas."
+      result: "Aumento da previsibilidade de entregas.",
+      link: "https://www.linkedin.com/in/kistvictor/"
     }
   ];
 
